@@ -1,25 +1,140 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://gimquokka.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gimquokka.github.io/" rel="alternate" type="text/html" /><updated>2020-07-23T20:03:23-07:00</updated><id>https://gimquokka.github.io/feed.xml</id><title type="html">Jinyoung Kim</title><subtitle>personal description</subtitle><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><entry><title type="html">Future Blog Post</title><link href="https://gimquokka.github.io/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Future Blog Post" /><published>2199-01-01T00:00:00-08:00</published><updated>2199-01-01T00:00:00-08:00</updated><id>https://gimquokka.github.io/posts/2012/08/future-post</id><content type="html" xml:base="https://gimquokka.github.io/posts/2012/08/blog-post-4/">&lt;p&gt;This post will show up by default. To disable scheduling of future posts, edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.yml&lt;/code&gt; and set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;future: false&lt;/code&gt;.&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This post will show up by default. To disable scheduling of future posts, edit config.yml and set future: false.</summary></entry><entry><title type="html">Blog Post number 4</title><link href="https://gimquokka.github.io/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Blog Post number 4" /><published>2015-08-14T00:00:00-07:00</published><updated>2015-08-14T00:00:00-07:00</updated><id>https://gimquokka.github.io/posts/2012/08/blog-post-4</id><content type="html" xml:base="https://gimquokka.github.io/posts/2012/08/blog-post-4/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://gimquokka.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gimquokka.github.io/" rel="alternate" type="text/html" /><updated>2020-07-23T21:59:32-07:00</updated><id>https://gimquokka.github.io/feed.xml</id><title type="html">Jinyoung Kim</title><subtitle>personal description</subtitle><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><entry><title type="html">[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1</title><link href="https://gimquokka.github.io/react-native/React-Native-signal-SIGABRT-Err-in-Xcode-after-update-iOS-ver/" rel="alternate" type="text/html" title="[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1" /><published>2020-04-09T00:00:00-07:00</published><updated>2020-04-09T15:00:00-07:00</updated><id>https://gimquokka.github.io/react-native/%5BReact-Native%5D%20signal%20SIGABRT%20Err%20in%20Xcode%20after%20update%20iOS%20ver</id><content type="html" xml:base="https://gimquokka.github.io/react-native/React-Native-signal-SIGABRT-Err-in-Xcode-after-update-iOS-ver/">&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;p&gt;After update iPhone(real device) iOS version to 13.3.1, &lt;em&gt;“&lt;/em&gt;&lt;strong&gt;&lt;em&gt;Thread 1: signal SIGABRT~*&lt;/em&gt;&lt;/strong&gt;”* error occurred in Xcode that run real iOS device(iPhone) for debugging react native project. It also seems to occur in Flutter project that also use Thread system. Let’s figure out the solution👊&lt;/p&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1760/1*9NHr2mlvQg21poB-Qzm-SQ.png&quot; alt=&quot;img&quot; /&gt;Theard 1 ~ Error Xcode screen&lt;/p&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry><entry><title type="html">Blog Post number 3</title><link href="https://gimquokka.github.io/posts/2014/08/blog-post-3/" rel="alternate" type="text/html" title="Blog Post number 3" /><published>2014-08-14T00:00:00-07:00</published><updated>2014-08-14T00:00:00-07:00</updated><id>https://gimquokka.github.io/posts/2014/08/blog-post-3</id><content type="html" xml:base="https://gimquokka.github.io/posts/2014/08/blog-post-3/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;p&gt;There are three solution to solve this problem.&lt;/p&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
+&lt;p&gt;\1. Use a non-personal Team provisioning profile&lt;/p&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry><entry><title type="html">Blog Post number 2</title><link href="https://gimquokka.github.io/posts/2013/08/blog-post-2/" rel="alternate" type="text/html" title="Blog Post number 2" /><published>2013-08-14T00:00:00-07:00</published><updated>2013-08-14T00:00:00-07:00</updated><id>https://gimquokka.github.io/posts/2013/08/blog-post-2</id><content type="html" xml:base="https://gimquokka.github.io/posts/2013/08/blog-post-2/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;p&gt;\2. Run on the 13.3.1 version on simulator not a real device&lt;/p&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;p&gt;\3. Downgrade real iOS device’s version under 13.3.1&lt;/p&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
+&lt;h4 id=&quot;1-use-a-non-personal-team-provisioning-profile&quot;&gt;1. Use a non-personal Team provisioning profile&lt;/h4&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry><entry><title type="html">Blog Post number 1</title><link href="https://gimquokka.github.io/posts/2012/08/blog-post-1/" rel="alternate" type="text/html" title="Blog Post number 1" /><published>2012-08-14T00:00:00-07:00</published><updated>2012-08-14T00:00:00-07:00</updated><id>https://gimquokka.github.io/posts/2012/08/blog-post-1</id><content type="html" xml:base="https://gimquokka.github.io/posts/2012/08/blog-post-1/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;p&gt;In my case, Solve the problem this way. &lt;strong&gt;*when I changed provisioning profile in general tab personal to corporate*&lt;/strong&gt;. Problem was solved. this problem is just system error. So, we have to wait or fix React Native Library to compensate for error. Modify our RN code does not make chagne.&lt;/p&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;h4 id=&quot;2-run-on-the-1331-version-on-simulator-not-a-real-device&quot;&gt;2. Run on the 13.3.1 version on simulator not a real device&lt;/h4&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
+&lt;p&gt;It’s confirmed that react native app &lt;strong&gt;a*lready distributed from Apple App Store don’t make a crush*&lt;/strong&gt; on real device iOS version 13.3.1&lt;strong&gt;.&lt;/strong&gt; Therefore, if your purpose is to run RN project just for debugging app working, Test it on Simulator. Because Customer will not face such problems in real case.&lt;/p&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry></feed>
+&lt;h4 id=&quot;3-downgrade-real-ios-devices-version-under-1331&quot;&gt;3. Downgrade real iOS device’s version under 13.3.1&lt;/h4&gt;
+
+&lt;p&gt;If you have to run RN project in real device, but you don’t have corporate provisioning profile. Downgrade you iPhone iOS version lower than 13.3.1.&lt;/p&gt;
+
+&lt;p&gt;How to Downgrade iOS version? It’s pretty simple! 😜&lt;/p&gt;
+
+&lt;p&gt;First, go to &lt;a href=&quot;https://ipsw.me/&quot;&gt;this site&lt;/a&gt; and Download proper iOS Firmware fit for your iPhone.&lt;/p&gt;
+
+&lt;p&gt;Second, click “update button” with option on mac or shift on window. Then you can choice iOS firmware file that download from&lt;a href=&quot;https://ipsw.me/&quot;&gt; site above&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;All you have to do to downgrade is done. It is not easy? Isn’t it?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1760/1*yrIp6A3WO9OjmEGLc_-n7w.png&quot; alt=&quot;img&quot; /&gt;iPhone update button location in mac&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;The solution is simple, but a lot of talk. It’s not enough, but I hope it will help someone🙏🏻&lt;/p&gt;
+
+&lt;p&gt;Thank you!&lt;/p&gt;
+
+&lt;p&gt;References: https://github.com/flutter/flutter/issues/49504&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="React-Native" /><category term="Android" /><category term="iOS" /><summary type="html">[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1</summary></entry><entry><title type="html">[React-Native] Useful reset and renewal commands for project</title><link href="https://gimquokka.github.io/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/" rel="alternate" type="text/html" title="[React-Native] Useful reset and renewal commands for project" /><published>2020-04-08T00:00:00-07:00</published><updated>2020-04-08T15:00:00-07:00</updated><id>https://gimquokka.github.io/react-native/%5BReact-Native%5D%20Useful%20reset%20and%20renewal%20commands%20for%20project</id><content type="html" xml:base="https://gimquokka.github.io/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/">&lt;h3 id=&quot;react-native-useful-reset-and-renewal-commands-for-project&quot;&gt;[React-Native] Useful reset and renewal commands for project&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1760/1*gzu_yywahA7forBLGcfOFA.jpeg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;intro&quot;&gt;Intro&lt;/h3&gt;
+
+&lt;p&gt;We sometimes experience our code edit isn’t reflected to output screen of project, the error does not disappear even though the cause has been fixed, or unknown error occur that seems to be not my fault (but the most of case it is your wrong…🥴) in React-Native.&lt;/p&gt;
+
+&lt;p&gt;Most of these problems may derived from remaining data and state of npm metro sever, build file in Xcode, android studio and so on. In this cases, the problem can be solved simply by some reset and renewal commands. Therefore, in this post, I’ll try to clean up the commands that I naturally learned while solving errors. It’s simple, but I hope it helps someone🙏🏻&lt;/p&gt;
+
+&lt;h3 id=&quot;commands&quot;&gt;Commands&lt;/h3&gt;
+
+&lt;h4 id=&quot;npm&quot;&gt;npm&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm start --reset-cache  //start metro server with reset cache
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The above commands reset cache of metro sever as the name suggests. It could be a solution of problem no reflecting of installing library, json file changes or modified codes. Because, in most of cases, these problem could be invoked from metro server’s cached data.&lt;/p&gt;
+
+&lt;p&gt;It’s easy to understand if you think of this as a refresh button when web surfing. I have been using it very useful!👍&lt;/p&gt;
+
+&lt;h4 id=&quot;android&quot;&gt;Android&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./gradlew clean  //Should run command in 'android' folder(./android). It will purge android build folder.
+Click 'Sync Project with Gradle Files' in Android Studio         //Synchronize project with Gradle build file.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Try using ‘./gradlew clean’. when you think there is no wrong in your project, but android project build fail successively. Cause might be a pre-exist build file.&lt;/p&gt;
+
+&lt;p&gt;It is also recommended to execute both commands when you clone React Native project of others. Since, in many cases, build files and local property like SDK location can be remain in state of and existing user’s one. By run ‘&lt;em&gt;Sync Project with Gradle Files’&lt;/em&gt; your project configuration is synchronized with local state and ‘./gradlew clean’. clean pre-exist build files.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1760/1*x6S7qyUa1NIOgTTRcR9uyw.png&quot; alt=&quot;img&quot; /&gt;&lt;em&gt;“Sync Project with Gradle Files” location on&lt;/em&gt; Android Studio&lt;/p&gt;
+
+&lt;h3 id=&quot;ios&quot;&gt;iOS&lt;/h3&gt;
+
+&lt;h4 id=&quot;xcode&quot;&gt;Xcode&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;In Xcode press 'Cmd + Shift + K' in mac or Click 'Clean Build Folder' in Product tab on status bar.
+rm -rf ~/Library/Developer/Xcode/DerivedData  //Run command on every path in terminal. It remove derived data like modules cache and etc...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As explained in android section, if project build is kinked or you have problems with compilations, you can think of it as clean the folders created by an existing build and Derived data , that like generated by system include module cache for pre-compiling and so on…&lt;/p&gt;
+
+&lt;h4 id=&quot;pod&quot;&gt;Pod&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod install  //Install and renewal pod files in ios folder. It should run on ios folder(./ios)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The pod connects React Native’s node libraries with iOS. If you manage libraries in npm or yarn in RN, you can think of them in pod on iOS.&lt;/p&gt;
+
+&lt;p&gt;If you download and write a lot of libraries for your project, the library github README tells you to do a pod install. Even though you have done npm install and yarn add, sometimes you miss the pod install command in iOS folder. In this case, the library can’t be found when building iOS, or the ~ .h file often causes problems when building with Xcode.&lt;/p&gt;
+
+&lt;p&gt;Before running the simulator with react-native run-ios, make sure the pod install result is all green color that means successfully pod installed.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;A month has passed since I learned RN. There was time to acquire knowledge during this period, but it seems that I spent almost two to three weeks catching errors. Although Docs is kind, it’s not so detailed at the book level, and there are no Korean-language resources, and if you go to StackOverflow, github issue and look at the solutions people have written, they have 10 solutions.&lt;/p&gt;
+
+&lt;p&gt;At first, whenever I catch an error while googled, I get a lot of stress because of the idea of ”I have a lot to learn, but I have to catch the error …”. I did it. Now, whether you’ve improved a bit or you’ve improved your ability to handle code, you’ve significantly reduced the frequency of encountering errors. This is the moment when we feel the importance of steady.&lt;/p&gt;
+
+&lt;p&gt;I still have a long way to go, and I don’t know much, but I hope this is something I’ve been looking for! 🙏🏻. If you have any questions, please leave a question. Thank you.&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="React-Native" /><category term="Android" /><category term="iOS" /><summary type="html">[React-Native] Useful reset and renewal commands for project</summary></entry><entry><title type="html">What is Validation sets?</title><link href="https://gimquokka.github.io/ml/What-is-Validation-set/" rel="alternate" type="text/html" title="What is Validation sets?" /><published>2020-04-07T00:00:00-07:00</published><updated>2020-04-07T14:43:00-07:00</updated><id>https://gimquokka.github.io/ml/What%20is%20Validation%20set</id><content type="html" xml:base="https://gimquokka.github.io/ml/What-is-Validation-set/">&lt;p&gt;During take a Andrew ng’s 6th weeks Machine Learning at  in cousera, I  was curious about exactly what is Validation sets and why use it. I simply organize my understanding in here. I hope it helpful someone!🙏🏻&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-validation-sets&quot;&gt;What is Validation sets?&lt;/h2&gt;
+
+&lt;p&gt;₩₩&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
+  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;$log(5)+e^4$&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="ML" /><category term="DL" /><category term="DS" /><summary type="html">Use Validation sets</summary></entry><entry><title type="html">두번째 글 테스트</title><link href="https://gimquokka.github.io/test/second-post/" rel="alternate" type="text/html" title="두번째 글 테스트" /><published>2020-03-18T00:00:00-07:00</published><updated>2019-04-13T06:06:00-07:00</updated><id>https://gimquokka.github.io/test/second-post</id><content type="html" xml:base="https://gimquokka.github.io/test/second-post/">&lt;p&gt;아… 피곤쓰!!!&lt;/p&gt;
+
+&lt;p&gt;아… 피곤쓰!!!&lt;/p&gt;
+
+&lt;p&gt;아… 피곤쓰!!!&lt;/p&gt;
+
+&lt;p&gt;아… 피곤쓰!!!&lt;/p&gt;
+
+&lt;p&gt;아… 피곤쓰!!!&lt;/p&gt;
+
+&lt;p&gt;Pages가 다른 블로그 플랫폼 보다 편한 것 같아서 마음에 든다.
+다른 사람들도 같이 많이 사용했으면 좋겠다는 생각이 든다.&lt;/p&gt;
+
+&lt;p&gt;YFM에서 정의한 제목을 이중 괄호 구문으로 본문에 추가할 수 있다.
+이 글의 제목은 두번째 글 테스트이고
+마지막으로 수정된 시간은 2019-04-13 08:06:00 -0500이다.&lt;/p&gt;
+
+&lt;p&gt;Check! Wake up!&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="ML" /><category term="DL" /><summary type="html">두번째 글 테스트입니다.</summary></entry><entry><title type="html">github.io 블로그 시작하기</title><link href="https://gimquokka.github.io/%EC%9C%A4%EB%8F%99%EC%A3%BC/first-post/" rel="alternate" type="text/html" title="github.io 블로그 시작하기" /><published>2020-03-17T00:00:00-07:00</published><updated>2019-04-13T06:06:00-07:00</updated><id>https://gimquokka.github.io/%EC%9C%A4%EB%8F%99%EC%A3%BC/first-post</id><content type="html" xml:base="https://gimquokka.github.io/%EC%9C%A4%EB%8F%99%EC%A3%BC/first-post/">&lt;p&gt;GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.
+GitHub Blog 서비스의 이름은 Pages이다.&lt;/p&gt;
+
+&lt;p&gt;Pages가 다른 블로그 플랫폼 보다 편한 것 같아서 마음에 든다.
+다른 사람들도 같이 많이 사용했으면 좋겠다는 생각이 든다.&lt;/p&gt;
+
+&lt;p&gt;YFM에서 정의한 제목을 이중 괄호 구문으로 본문에 추가할 수 있다.
+이 글의 제목은 github.io 블로그 시작하기이고
+마지막으로 수정된 시간은 2019-04-13 08:06:00 -0500이다.&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="ML" /><category term="DL" /><summary type="html">GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.</summary></entry></feed>

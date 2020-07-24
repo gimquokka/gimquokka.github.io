@@ -19,7 +19,7 @@
 
 
 
-<title>Blog Post number 1 - Jinyoung Kim</title>
+<title>[React-Native] Useful reset and renewal commands for project - Jinyoung Kim</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Jinyoung Kim">
-<meta property="og:title" content="Blog Post number 1">
+<meta property="og:title" content="[React-Native] Useful reset and renewal commands for project">
 
 
-  <link rel="canonical" href="https://gimquokka.github.io/posts/2012/08/blog-post-1/">
-  <meta property="og:url" content="https://gimquokka.github.io/posts/2012/08/blog-post-1/">
+  <link rel="canonical" href="https://gimquokka.github.io/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/">
+  <meta property="og:url" content="https://gimquokka.github.io/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/">
 
 
 
-  <meta property="og:description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
+  <meta property="og:description" content="[React-Native] Useful reset and renewal commands for project">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2012-08-14T00:00:00-07:00">
+  <meta property="article:published_time" content="2020-04-08T00:00:00-07:00">
 
 
 
@@ -255,29 +255,29 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Blog Post number 1">
-    <meta itemprop="description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
-    <meta itemprop="datePublished" content="August 14, 2012">
+    <meta itemprop="headline" content="[React-Native] Useful reset and renewal commands for project">
+    <meta itemprop="description" content="[React-Native] Useful reset and renewal commands for project">
+    <meta itemprop="datePublished" content="April 08, 2020">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Blog Post number 1
+          <h1 class="page__title" itemprop="headline">[React-Native] Useful reset and renewal commands for project
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
 
 
   
-	  less than 1 minute read
+	  4 minute read
 	
 </p>
           
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2012-08-14T00:00:00-07:00">August 14, 2012</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-04-08T00:00:00-07:00">April 08, 2020</time></p>
         
         
              
@@ -287,13 +287,67 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+        <h3 id="react-native-useful-reset-and-renewal-commands-for-project">[React-Native] Useful reset and renewal commands for project</h3>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<p><img src="https://cdn-images-1.medium.com/max/1760/1*gzu_yywahA7forBLGcfOFA.jpeg" alt="img" /></p>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<h3 id="intro">Intro</h3>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>
+<p>We sometimes experience our code edit isn’t reflected to output screen of project, the error does not disappear even though the cause has been fixed, or unknown error occur that seems to be not my fault (but the most of case it is your wrong…🥴) in React-Native.</p>
+
+<p>Most of these problems may derived from remaining data and state of npm metro sever, build file in Xcode, android studio and so on. In this cases, the problem can be solved simply by some reset and renewal commands. Therefore, in this post, I’ll try to clean up the commands that I naturally learned while solving errors. It’s simple, but I hope it helps someone🙏🏻</p>
+
+<h3 id="commands">Commands</h3>
+
+<h4 id="npm">npm</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm start --reset-cache  //start metro server with reset cache
+</code></pre></div></div>
+
+<p>The above commands reset cache of metro sever as the name suggests. It could be a solution of problem no reflecting of installing library, json file changes or modified codes. Because, in most of cases, these problem could be invoked from metro server’s cached data.</p>
+
+<p>It’s easy to understand if you think of this as a refresh button when web surfing. I have been using it very useful!👍</p>
+
+<h4 id="android">Android</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./gradlew clean  //Should run command in 'android' folder(./android). It will purge android build folder.
+Click 'Sync Project with Gradle Files' in Android Studio         //Synchronize project with Gradle build file.
+</code></pre></div></div>
+
+<p>Try using ‘./gradlew clean’. when you think there is no wrong in your project, but android project build fail successively. Cause might be a pre-exist build file.</p>
+
+<p>It is also recommended to execute both commands when you clone React Native project of others. Since, in many cases, build files and local property like SDK location can be remain in state of and existing user’s one. By run ‘<em>Sync Project with Gradle Files’</em> your project configuration is synchronized with local state and ‘./gradlew clean’. clean pre-exist build files.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/1760/1*x6S7qyUa1NIOgTTRcR9uyw.png" alt="img" /><em>“Sync Project with Gradle Files” location on</em> Android Studio</p>
+
+<h3 id="ios">iOS</h3>
+
+<h4 id="xcode">Xcode</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In Xcode press 'Cmd + Shift + K' in mac or Click 'Clean Build Folder' in Product tab on status bar.
+rm -rf ~/Library/Developer/Xcode/DerivedData  //Run command on every path in terminal. It remove derived data like modules cache and etc...
+</code></pre></div></div>
+
+<p>As explained in android section, if project build is kinked or you have problems with compilations, you can think of it as clean the folders created by an existing build and Derived data , that like generated by system include module cache for pre-compiling and so on…</p>
+
+<h4 id="pod">Pod</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod install  //Install and renewal pod files in ios folder. It should run on ios folder(./ios)
+</code></pre></div></div>
+
+<p>The pod connects React Native’s node libraries with iOS. If you manage libraries in npm or yarn in RN, you can think of them in pod on iOS.</p>
+
+<p>If you download and write a lot of libraries for your project, the library github README tells you to do a pod install. Even though you have done npm install and yarn add, sometimes you miss the pod install command in iOS folder. In this case, the library can’t be found when building iOS, or the ~ .h file often causes problems when building with Xcode.</p>
+
+<p>Before running the simulator with react-native run-ios, make sure the pod install result is all green color that means successfully pod installed.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>A month has passed since I learned RN. There was time to acquire knowledge during this period, but it seems that I spent almost two to three weeks catching errors. Although Docs is kind, it’s not so detailed at the book level, and there are no Korean-language resources, and if you go to StackOverflow, github issue and look at the solutions people have written, they have 10 solutions.</p>
+
+<p>At first, whenever I catch an error while googled, I get a lot of stress because of the idea of ”I have a lot to learn, but I have to catch the error …”. I did it. Now, whether you’ve improved a bit or you’ve improved your ability to handle code, you’ve significantly reduced the frequency of encountering errors. This is the moment when we feel the importance of steady.</p>
+
+<p>I still have a long way to go, and I don’t know much, but I hope this is something I’ve been looking for! 🙏🏻. If you have any questions, please leave a question. Thank you.</p>
 
         
       </section>
@@ -318,20 +372,43 @@
     
       
       
-      <a href="https://gimquokka.github.io/tags/#category1" class="page__taxonomy-item" rel="tag">category1</a><span class="sep">, </span>
+      <a href="https://gimquokka.github.io/tags/#android" class="page__taxonomy-item" rel="tag">Android</a><span class="sep">, </span>
     
       
       
-      <a href="https://gimquokka.github.io/tags/#category2" class="page__taxonomy-item" rel="tag">category2</a><span class="sep">, </span>
+      <a href="https://gimquokka.github.io/tags/#ios" class="page__taxonomy-item" rel="tag">iOS</a><span class="sep">, </span>
     
       
       
-      <a href="https://gimquokka.github.io/tags/#cool-posts" class="page__taxonomy-item" rel="tag">cool posts</a>
+      <a href="https://gimquokka.github.io/tags/#react-native" class="page__taxonomy-item" rel="tag">React-Native</a>
     
     </span>
   </p>
 
 
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://gimquokka.github.io/categories/#react-native" class="page__taxonomy-item" rel="tag">React-Native</a>
+    
+    </span>
+  </p>
 
 
       </footer>
@@ -343,11 +420,11 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=https://gimquokka.github.io/posts/2012/08/blog-post-1/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://gimquokka.github.io/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://gimquokka.github.io/posts/2012/08/blog-post-1/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://gimquokka.github.io/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://gimquokka.github.io/posts/2012/08/blog-post-1/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://gimquokka.github.io/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -355,10 +432,11 @@
 
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Previous</a>
+      <a href="https://gimquokka.github.io/ml/What-is-Validation-set/" class="pagination--pager" title="What is Validation sets?
+">Previous</a>
     
     
-      <a href="https://gimquokka.github.io/posts/2013/08/blog-post-2/" class="pagination--pager" title="Blog Post number 2
+      <a href="https://gimquokka.github.io/react-native/React-Native-signal-SIGABRT-Err-in-Xcode-after-update-iOS-ver/" class="pagination--pager" title="[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1
 ">Next</a>
     
   </nav>
@@ -398,7 +476,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://gimquokka.github.io/posts/2012/08/blog-post-4/" rel="permalink">Future Blog Post
+        <a href="https://gimquokka.github.io/react-native/React-Native-signal-SIGABRT-Err-in-Xcode-after-update-iOS-ver/" rel="permalink">[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1
 </a>
       
     </h2>
@@ -408,17 +486,17 @@
 
 
   
-	  less than 1 minute read
+	  1 minute read
 	
 </p>
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2199-01-01T00:00:00-08:00">January 01, 2199</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-04-09T00:00:00-07:00">April 09, 2020</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This post will show up by default. To disable scheduling of future posts, edit <code class="language-plaintext highlighter-rouge">config.yml</code> and set <code class="language-plaintext highlighter-rouge">future: false</code>.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1</p>
 </p>
     
     
@@ -440,7 +518,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://gimquokka.github.io/posts/2012/08/blog-post-4/" rel="permalink">Blog Post number 4
+        <a href="https://gimquokka.github.io/ml/What-is-Validation-set/" rel="permalink">What is Validation sets?
 </a>
       
     </h2>
@@ -456,12 +534,11 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2015-08-14T00:00:00-07:00">August 14, 2015</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-04-07T00:00:00-07:00">April 07, 2020</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
-
+    <p class="archive__item-excerpt" itemprop="description"><p>Use Validation sets</p>
 </p>
     
     
@@ -483,7 +560,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://gimquokka.github.io/posts/2014/08/blog-post-3/" rel="permalink">Blog Post number 3
+        <a href="https://gimquokka.github.io/test/second-post/" rel="permalink">두번째 글 테스트
 </a>
       
     </h2>
@@ -499,12 +576,11 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-08-14T00:00:00-07:00">August 14, 2014</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-03-18T00:00:00-07:00">March 18, 2020</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
-
+    <p class="archive__item-excerpt" itemprop="description"><p>두번째 글 테스트입니다.</p>
 </p>
     
     
@@ -526,7 +602,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://gimquokka.github.io/posts/2013/08/blog-post-2/" rel="permalink">Blog Post number 2
+        <a href="https://gimquokka.github.io/%EC%9C%A4%EB%8F%99%EC%A3%BC/first-post/" rel="permalink">github.io 블로그 시작하기
 </a>
       
     </h2>
@@ -542,12 +618,11 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2013-08-14T00:00:00-07:00">August 14, 2013</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-03-17T00:00:00-07:00">March 17, 2020</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
-
+    <p class="archive__item-excerpt" itemprop="description"><p>GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.</p>
 </p>
     
     
