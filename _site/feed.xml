@@ -1,28 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://gimquokka.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gimquokka.github.io/" rel="alternate" type="text/html" /><updated>2020-07-23T22:13:49-07:00</updated><id>https://gimquokka.github.io/feed.xml</id><title type="html">Jinyoung Kim</title><subtitle>personal description</subtitle><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><entry><title type="html">[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1</title><link href="https://gimquokka.github.io/react-native/React-Native-signal-SIGABRT-Err-in-Xcode-after-update-iOS-ver/" rel="alternate" type="text/html" title="[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1" /><published>2020-04-09T00:00:00-07:00</published><updated>2020-04-09T15:00:00-07:00</updated><id>https://gimquokka.github.io/react-native/%5BReact-Native%5D%20signal%20SIGABRT%20Err%20in%20Xcode%20after%20update%20iOS%20ver</id><content type="html" xml:base="https://gimquokka.github.io/react-native/React-Native-signal-SIGABRT-Err-in-Xcode-after-update-iOS-ver/">&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-24T02:39:39-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinyoung Kim</title><subtitle>personal description</subtitle><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><entry><title type="html">[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1</title><link href="http://localhost:4000/react-native/React-Native-signal-SIGABRT-Err-in-Xcode-after-update-iOS-ver/" rel="alternate" type="text/html" title="[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1" /><published>2020-04-09T00:00:00-07:00</published><updated>2020-04-09T15:00:00-07:00</updated><id>http://localhost:4000/react-native/%5BReact-Native%5D%20signal%20SIGABRT%20Err%20in%20Xcode%20after%20update%20iOS%20ver</id><content type="html" xml:base="http://localhost:4000/react-native/React-Native-signal-SIGABRT-Err-in-Xcode-after-update-iOS-ver/">&lt;h1 id=&quot;description&quot;&gt;Description&lt;/h1&gt;
 
 &lt;p&gt;After update iPhone(real device) iOS version to 13.3.1, &lt;em&gt;“&lt;/em&gt;&lt;strong&gt;&lt;em&gt;Thread 1: signal SIGABRT~*&lt;/em&gt;&lt;/strong&gt;”* error occurred in Xcode that run real iOS device(iPhone) for debugging react native project. It also seems to occur in Flutter project that also use Thread system. Let’s figure out the solution👊&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1760/1*9NHr2mlvQg21poB-Qzm-SQ.png&quot; alt=&quot;img&quot; /&gt;Theard 1 ~ Error Xcode screen&lt;/p&gt;
 
-&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
 
 &lt;p&gt;There are three solution to solve this problem.&lt;/p&gt;
 
-&lt;p&gt;\1. Use a non-personal Team provisioning profile&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use a non-personal Team provisioning profile&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run on the 13.3.1 version on simulator not a real device&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Downgrade real iOS device’s version under 13.3.1&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;\2. Run on the 13.3.1 version on simulator not a real device&lt;/p&gt;
-
-&lt;p&gt;\3. Downgrade real iOS device’s version under 13.3.1&lt;/p&gt;
-
-&lt;h4 id=&quot;1-use-a-non-personal-team-provisioning-profile&quot;&gt;1. Use a non-personal Team provisioning profile&lt;/h4&gt;
+&lt;h2 id=&quot;1-use-a-non-personal-team-provisioning-profile&quot;&gt;1. Use a non-personal Team provisioning profile&lt;/h2&gt;
 
 &lt;p&gt;In my case, Solve the problem this way. &lt;strong&gt;*when I changed provisioning profile in general tab personal to corporate*&lt;/strong&gt;. Problem was solved. this problem is just system error. So, we have to wait or fix React Native Library to compensate for error. Modify our RN code does not make chagne.&lt;/p&gt;
 
-&lt;h4 id=&quot;2-run-on-the-1331-version-on-simulator-not-a-real-device&quot;&gt;2. Run on the 13.3.1 version on simulator not a real device&lt;/h4&gt;
+&lt;h2 id=&quot;2-run-on-the-1331-version-on-simulator-not-a-real-device&quot;&gt;2. Run on the 13.3.1 version on simulator not a real device&lt;/h2&gt;
 
 &lt;p&gt;It’s confirmed that react native app &lt;strong&gt;a*lready distributed from Apple App Store don’t make a crush*&lt;/strong&gt; on real device iOS version 13.3.1&lt;strong&gt;.&lt;/strong&gt; Therefore, if your purpose is to run RN project just for debugging app working, Test it on Simulator. Because Customer will not face such problems in real case.&lt;/p&gt;
 
-&lt;h4 id=&quot;3-downgrade-real-ios-devices-version-under-1331&quot;&gt;3. Downgrade real iOS device’s version under 13.3.1&lt;/h4&gt;
+&lt;h2 id=&quot;3-downgrade-real-ios-devices-version-under-1331&quot;&gt;3. Downgrade real iOS device’s version under 13.3.1&lt;/h2&gt;
 
 &lt;p&gt;If you have to run RN project in real device, but you don’t have corporate provisioning profile. Downgrade you iPhone iOS version lower than 13.3.1.&lt;/p&gt;
 
@@ -36,25 +42,23 @@
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1760/1*yrIp6A3WO9OjmEGLc_-n7w.png&quot; alt=&quot;img&quot; /&gt;iPhone update button location in mac&lt;/p&gt;
 
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 
 &lt;p&gt;The solution is simple, but a lot of talk. It’s not enough, but I hope it will help someone🙏🏻&lt;/p&gt;
 
 &lt;p&gt;Thank you!&lt;/p&gt;
 
-&lt;p&gt;References: https://github.com/flutter/flutter/issues/49504&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="React-Native" /><category term="Android" /><category term="iOS" /><summary type="html">[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1</summary></entry><entry><title type="html">[React-Native] Useful reset and renewal commands for project</title><link href="https://gimquokka.github.io/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/" rel="alternate" type="text/html" title="[React-Native] Useful reset and renewal commands for project" /><published>2020-04-08T00:00:00-07:00</published><updated>2020-04-08T15:00:00-07:00</updated><id>https://gimquokka.github.io/react-native/%5BReact-Native%5D%20Useful%20reset%20and%20renewal%20commands%20for%20project</id><content type="html" xml:base="https://gimquokka.github.io/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/">&lt;h3 id=&quot;react-native-useful-reset-and-renewal-commands-for-project&quot;&gt;[React-Native] Useful reset and renewal commands for project&lt;/h3&gt;
+&lt;p&gt;References: https://github.com/flutter/flutter/issues/49504&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="React-Native" /><category term="Android" /><category term="iOS" /><summary type="html">[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1</summary></entry><entry><title type="html">[React-Native] Useful reset and renewal commands for project</title><link href="http://localhost:4000/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/" rel="alternate" type="text/html" title="[React-Native] Useful reset and renewal commands for project" /><published>2020-04-08T00:00:00-07:00</published><updated>2020-04-08T15:00:00-07:00</updated><id>http://localhost:4000/react-native/%5BReact-Native%5D%20Useful%20reset%20and%20renewal%20commands%20for%20project</id><content type="html" xml:base="http://localhost:4000/react-native/React-Native-Useful-reset-and-renewal-commands-for-project/">&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1760/1*gzu_yywahA7forBLGcfOFA.jpeg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1760/1*gzu_yywahA7forBLGcfOFA.jpeg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;intro&quot;&gt;Intro&lt;/h3&gt;
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;We sometimes experience our code edit isn’t reflected to output screen of project, the error does not disappear even though the cause has been fixed, or unknown error occur that seems to be not my fault (but the most of case it is your wrong…🥴) in React-Native.&lt;/p&gt;
 
 &lt;p&gt;Most of these problems may derived from remaining data and state of npm metro sever, build file in Xcode, android studio and so on. In this cases, the problem can be solved simply by some reset and renewal commands. Therefore, in this post, I’ll try to clean up the commands that I naturally learned while solving errors. It’s simple, but I hope it helps someone🙏🏻&lt;/p&gt;
 
-&lt;h3 id=&quot;commands&quot;&gt;Commands&lt;/h3&gt;
+&lt;h2 id=&quot;commands&quot;&gt;Commands&lt;/h2&gt;
 
-&lt;h4 id=&quot;npm&quot;&gt;npm&lt;/h4&gt;
+&lt;h3 id=&quot;npm&quot;&gt;npm&lt;/h3&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm start --reset-cache  //start metro server with reset cache
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -63,7 +67,7 @@
 
 &lt;p&gt;It’s easy to understand if you think of this as a refresh button when web surfing. I have been using it very useful!👍&lt;/p&gt;
 
-&lt;h4 id=&quot;android&quot;&gt;Android&lt;/h4&gt;
+&lt;h3 id=&quot;android&quot;&gt;Android&lt;/h3&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./gradlew clean  //Should run command in 'android' folder(./android). It will purge android build folder.
 Click 'Sync Project with Gradle Files' in Android Studio         //Synchronize project with Gradle build file.
@@ -77,7 +81,7 @@ Click 'Sync Project with Gradle Files' in Android Studio         //Synchronize p
 
 &lt;h3 id=&quot;ios&quot;&gt;iOS&lt;/h3&gt;
 
-&lt;h4 id=&quot;xcode&quot;&gt;Xcode&lt;/h4&gt;
+&lt;h3 id=&quot;xcode&quot;&gt;Xcode&lt;/h3&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;In Xcode press 'Cmd + Shift + K' in mac or Click 'Clean Build Folder' in Product tab on status bar.
 rm -rf ~/Library/Developer/Xcode/DerivedData  //Run command on every path in terminal. It remove derived data like modules cache and etc...
@@ -85,7 +89,7 @@ rm -rf ~/Library/Developer/Xcode/DerivedData  //Run command on every path in ter
 
 &lt;p&gt;As explained in android section, if project build is kinked or you have problems with compilations, you can think of it as clean the folders created by an existing build and Derived data , that like generated by system include module cache for pre-compiling and so on…&lt;/p&gt;
 
-&lt;h4 id=&quot;pod&quot;&gt;Pod&lt;/h4&gt;
+&lt;h3 id=&quot;pod&quot;&gt;Pod&lt;/h3&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod install  //Install and renewal pod files in ios folder. It should run on ios folder(./ios)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -96,45 +100,10 @@ rm -rf ~/Library/Developer/Xcode/DerivedData  //Run command on every path in ter
 
 &lt;p&gt;Before running the simulator with react-native run-ios, make sure the pod install result is all green color that means successfully pod installed.&lt;/p&gt;
 
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;A month has passed since I learned RN. There was time to acquire knowledge during this period, but it seems that I spent almost two to three weeks catching errors. Although Docs is kind, it’s not so detailed at the book level, and there are no Korean-language resources, and if you go to StackOverflow, github issue and look at the solutions people have written, they have 10 solutions.&lt;/p&gt;
 
 &lt;p&gt;At first, whenever I catch an error while googled, I get a lot of stress because of the idea of ”I have a lot to learn, but I have to catch the error …”. I did it. Now, whether you’ve improved a bit or you’ve improved your ability to handle code, you’ve significantly reduced the frequency of encountering errors. This is the moment when we feel the importance of steady.&lt;/p&gt;
 
-&lt;p&gt;I still have a long way to go, and I don’t know much, but I hope this is something I’ve been looking for! 🙏🏻. If you have any questions, please leave a question. Thank you.&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="React-Native" /><category term="Android" /><category term="iOS" /><summary type="html">[React-Native] Useful reset and renewal commands for project</summary></entry><entry><title type="html">What is Validation sets?</title><link href="https://gimquokka.github.io/ml/What-is-Validation-set/" rel="alternate" type="text/html" title="What is Validation sets?" /><published>2020-04-07T00:00:00-07:00</published><updated>2020-04-07T14:43:00-07:00</updated><id>https://gimquokka.github.io/ml/What%20is%20Validation%20set</id><content type="html" xml:base="https://gimquokka.github.io/ml/What-is-Validation-set/">&lt;p&gt;During take a Andrew ng’s 6th weeks Machine Learning at  in cousera, I  was curious about exactly what is Validation sets and why use it. I simply organize my understanding in here. I hope it helpful someone!🙏🏻&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-validation-sets&quot;&gt;What is Validation sets?&lt;/h2&gt;
-
-&lt;p&gt;₩₩&lt;/p&gt;
-
-&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
-  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;$log(5)+e^4$&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="ML" /><category term="DL" /><category term="DS" /><summary type="html">Use Validation sets</summary></entry><entry><title type="html">두번째 글 테스트</title><link href="https://gimquokka.github.io/test/second-post/" rel="alternate" type="text/html" title="두번째 글 테스트" /><published>2020-03-18T00:00:00-07:00</published><updated>2019-04-13T06:06:00-07:00</updated><id>https://gimquokka.github.io/test/second-post</id><content type="html" xml:base="https://gimquokka.github.io/test/second-post/">&lt;p&gt;아… 피곤쓰!!!&lt;/p&gt;
-
-&lt;p&gt;아… 피곤쓰!!!&lt;/p&gt;
-
-&lt;p&gt;아… 피곤쓰!!!&lt;/p&gt;
-
-&lt;p&gt;아… 피곤쓰!!!&lt;/p&gt;
-
-&lt;p&gt;아… 피곤쓰!!!&lt;/p&gt;
-
-&lt;p&gt;Pages가 다른 블로그 플랫폼 보다 편한 것 같아서 마음에 든다.
-다른 사람들도 같이 많이 사용했으면 좋겠다는 생각이 든다.&lt;/p&gt;
-
-&lt;p&gt;YFM에서 정의한 제목을 이중 괄호 구문으로 본문에 추가할 수 있다.
-이 글의 제목은 두번째 글 테스트이고
-마지막으로 수정된 시간은 2019-04-13 08:06:00 -0500이다.&lt;/p&gt;
-
-&lt;p&gt;Check! Wake up!&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="ML" /><category term="DL" /><summary type="html">두번째 글 테스트입니다.</summary></entry><entry><title type="html">github.io 블로그 시작하기</title><link href="https://gimquokka.github.io/%EC%9C%A4%EB%8F%99%EC%A3%BC/first-post/" rel="alternate" type="text/html" title="github.io 블로그 시작하기" /><published>2020-03-17T00:00:00-07:00</published><updated>2019-04-13T06:06:00-07:00</updated><id>https://gimquokka.github.io/%EC%9C%A4%EB%8F%99%EC%A3%BC/first-post</id><content type="html" xml:base="https://gimquokka.github.io/%EC%9C%A4%EB%8F%99%EC%A3%BC/first-post/">&lt;p&gt;GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.
-GitHub Blog 서비스의 이름은 Pages이다.&lt;/p&gt;
-
-&lt;p&gt;Pages가 다른 블로그 플랫폼 보다 편한 것 같아서 마음에 든다.
-다른 사람들도 같이 많이 사용했으면 좋겠다는 생각이 든다.&lt;/p&gt;
-
-&lt;p&gt;YFM에서 정의한 제목을 이중 괄호 구문으로 본문에 추가할 수 있다.
-이 글의 제목은 github.io 블로그 시작하기이고
-마지막으로 수정된 시간은 2019-04-13 08:06:00 -0500이다.&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="ML" /><category term="DL" /><summary type="html">GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.</summary></entry></feed>
+&lt;p&gt;I still have a long way to go, and I don’t know much, but I hope this is something I’ve been looking for! 🙏🏻. If you have any questions, please leave a question. Thank you.&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="React-Native" /><category term="Android" /><category term="iOS" /><summary type="html">Useful reset and renewal commands for project</summary></entry></feed>
