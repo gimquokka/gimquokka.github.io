@@ -90,9 +90,6 @@
 <loc>https://gimquokka.github.io/portfolio/</loc>
 </url>
 <url>
-<loc>https://gimquokka.github.io/publications/</loc>
-</url>
-<url>
 <loc>https://gimquokka.github.io/sitemap/</loc>
 </url>
 <url>
@@ -112,6 +109,9 @@
 </url>
 <url>
 <loc>https://gimquokka.github.io/year-archive/</loc>
+</url>
+<url>
+<loc>https://gimquokka.github.io/_pages/publications/</loc>
 </url>
 <url>
 <loc>https://gimquokka.github.io/markdown_generator/</loc>
