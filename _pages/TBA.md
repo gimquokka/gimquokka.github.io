@@ -5,5 +5,5 @@ sitemap: false
 permalink: /tba/
 ---
 
-Currently the preparations are under way. please wait for a while. content to be announced
+Currently the preparations are under way. please wait for a while. content will be announced
 

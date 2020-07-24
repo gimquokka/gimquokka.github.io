@@ -1,10 +1,9 @@
-```
+---
 layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
-```
-
+---
 ## Conference Publications
 
 ___
@@ -90,3 +89,4 @@ NeurIPS 2017 Workshop on Bayesian Deep Learning
 **Taxonomic Curriculum Learning for Fine-Grained Object Recognition**  
 *Joseph Marino*  
 [PDF](../files/papers/2016/taxonomic_curriculum_learning.pdf)
+
