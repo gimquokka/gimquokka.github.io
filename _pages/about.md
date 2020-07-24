@@ -10,7 +10,7 @@ redirect_from:
 
 I am a undergraduate student in the [*Electrical Engineering and Computer Science* (EECS)](https://eecs.gist.ac.kr/eecs/index.do) program at the Gwangju Institute of Science and Technology (GIST). 
 
-[Download CV](../files/marino_cv.pdf)
+[Download CV](https://gimquokka.github.io/tba)
 
 ## Research Focus
 
