@@ -14,5 +14,5 @@ I am a undergraduate student in the [*Electrical Engineering and Computer Scienc
 
 ## Research Focus
 
-I am stiil reading [many papers](https://docs.google.com/spreadsheets/d/1ReydKv47Uzqv8gUgTixhu1hDmkel9bEn31VDSBJg5r0/edit?usp=sharing) and learning Machine Learning(ML), DeepLearning(DL), Computer Vision(CV), Natural Language Processing(NLP) and  so on📚! I've been in interested in CV and time-series analysis lately.So I am planing to research internship in graduate research lab or company about them.
+I am stiil reading [many papers](https://docs.google.com/spreadsheets/d/1i2wwq1T_lUmQx9fqKfCVhqYB2Y82OxhGJnry0k6Tn1U/edit?usp=sharing) and learning Machine Learning(ML), DeepLearning(DL), Computer Vision(CV), Natural Language Processing(NLP) and  so on📚! I've been in interested in CV and time-series analysis lately.So I am planing to research internship in graduate research lab or company about them.
 
