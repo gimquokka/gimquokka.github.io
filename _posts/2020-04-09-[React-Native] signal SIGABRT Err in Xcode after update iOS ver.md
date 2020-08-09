@@ -1,6 +1,6 @@
 ---
 title:  "[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1"
-excerpt: "[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1"
+excerpt: "Solve Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1"
 
 categories:
   - React-Native
@@ -57,4 +57,6 @@ The solution is simple, but a lot of talk. It’s not enough, but I hope it will
 
 Thank you!
 
-References: https://github.com/flutter/flutter/issues/49504
+
+
+*References*: https://github.com/flutter/flutter/issues/49504
