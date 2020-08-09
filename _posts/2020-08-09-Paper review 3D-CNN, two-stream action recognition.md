@@ -13,12 +13,14 @@ comments: true
 last_modified_at: 2020-08-09T22:00:00-00:00
 ---
 
-#*Paper*
+#Paper
 
 - (1) [Learning Spatiotemporal Features with 3D Convolutional Networks](http://openaccess.thecvf.com/content_iccv_2015/html/Tran_Learning_Spatiotemporal_Features_ICCV_2015_paper.html)
 - (2) [Two-stream convolutional networks for action recognition in videos](https://papers.nips.cc/paper/5353-two-stream-convolutional-networks-for-action-recognition-in-videos.pdf)
 
-#*Overall Lecture*
+
+
+#Overall Lecture
 
 - Still there are so many problem in video understanding as opposed to image recognition
 - If model process all frame in video, It’s getting too much computation. Every model sampling frame  for computation efficiency.
@@ -33,7 +35,9 @@ last_modified_at: 2020-08-09T22:00:00-00:00
   - (1) 3D-CNN model
   - (2) Optical flow, It use 2D-CNN
 
-#*Question*
+
+
+#Question
 
 - What kinds of field use Video descriptor?
   - => Every field use video. Deep learning could be replacement of orignal one
@@ -49,7 +53,3 @@ last_modified_at: 2020-08-09T22:00:00-00:00
   - No, Every model do sampling similarly
 - LSTM? Is better for capturing temporal data? Isn’t it?
   - NO. As stated above RNN actually doesn’t good choice bcz of unable to parallelize
-
-
-
-*References*: https://github.com/flutter/flutter/issues/49504
