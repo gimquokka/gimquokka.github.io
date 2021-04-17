@@ -1,13 +1,11 @@
 ---
-title:  "3D-CNN, two-stream action recognition paper review with Junghoon-seo"
-excerpt: "Paper review of 3D-CNN, two-stream action recognition"
+title:  "3D-CNN, two-stream action recognition paper review"
+excerpt: "Paper review of "3D-CNN" and "two-stream action recognition"
 
 categories:
   - ML 
 tags:
   - CV
-  - DL
-  - ML
 
 comments: true
 last_modified_at: 2020-08-09T22:00:00-00:00
@@ -20,7 +18,7 @@ last_modified_at: 2020-08-09T22:00:00-00:00
 
 
 
-# Overall Lecture
+# Overview
 
 - Still there are so many problem in video understanding as opposed to image recognition
 - If model process all frame in video, It’s getting too much computation. Every model sampling frame  for computation efficiency.
