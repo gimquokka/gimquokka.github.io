@@ -5,6 +5,7 @@ excerpt: "I introduce SR-GAN brifely with one page summary"
 categories:
   - ML 
 tags:
+  - TIL
   - CV
   - GAN
 

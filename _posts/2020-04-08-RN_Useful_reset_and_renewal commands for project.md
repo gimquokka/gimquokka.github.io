@@ -5,9 +5,7 @@ excerpt: "Useful reset and renewal commands for project"
 categories:
   - React-Native
 tags:
-  - React-Native
-  - Android
-  - iOS
+  - 
 
 comments: true
 last_modified_at: 2020-04-08T22:00:00-00:00

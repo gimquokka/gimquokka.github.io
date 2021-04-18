@@ -1,13 +1,11 @@
 ---
-title:  "[RN-Troubleshooting] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1"
+title:  "[React-Native] Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1"
 excerpt: "Solve Thread 1: signal SIGABRT Err in Xcode after update iOS ver to 13.3.1"
 
 categories:
   - React-Native
 tags:
-  - React-Native
-  - Android
-  - iOS
+  - 
 
 comments: true
 last_modified_at: 2020-04-09T22:00:00-00:00
