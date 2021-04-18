@@ -21,7 +21,7 @@ last_modified_at: 2020-08-09T22:00:00-00:00
 2. 이에 맞춰 할당되는static variable만이 static mehod에 사용이 가능하다. 
 3. instance varialbe의 경우 instance 생성되어 heap 영역에 할당된 이후. 즉, static method 생성 이후에 생성되기 때문에 사용이 불가능한 것이다.
 
-<img width="1177" alt="Java_Events_Timeline" src="https://user-images.githubusercontent.com/60743304/115094669-56142a80-9f59-11eb-9693-e5b59ac1e4a5.png">
+<img width="1177" alt="Java_Events_Timeline" src="https://user-images.githubusercontent.com/60743304/115131498-8defa080-a033-11eb-92e4-568e39a38eaa.png">
 
 <small>FIG 1. Java이 Event Timeline</small>
 
