@@ -1,5 +1,5 @@
 ---
-title:  "SR GAN one page summary"
+title:  "[ML] SRGAN one page summary"
 excerpt: "I introduce SR-GAN brifely with one page summary"
 
 categories:
