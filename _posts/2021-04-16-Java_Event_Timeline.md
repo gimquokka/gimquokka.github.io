@@ -1,6 +1,6 @@
 ---
 title:  "[Java] 왜 static variable은 static method에서 밖에 못쓸까?"
-excerpt: "Java_Event_Timeline"
+excerpt: "Java event timeline과 함께 static variable과 method의 관계에 대하여 살펴봅니다."
 
 categories:
   - Java
@@ -8,7 +8,7 @@ tags:
   - TIL
 
 comments: true
-last_modified_at: 2020-08-09T22:00:00-00:00
+last_modified_at: 2021-04-20T22:00:00-00:00
 ---
 
 질문: _왜  static method에서는 static variable만 쓸 수 있을까?_
