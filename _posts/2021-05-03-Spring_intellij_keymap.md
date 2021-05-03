@@ -44,4 +44,6 @@ last_modified_at: 2021-05-03T00:00:00-23:59
 - Shift + F6
   - Rename variables only after selected
 - Cmd + Opt + M
-  - Generate Method in current class with blocked codes 
+  - Generate Method in current class with blocked codes
+- Ctrl + tab(or + shift)
+  - Change Opened window to next one (or reverse)
