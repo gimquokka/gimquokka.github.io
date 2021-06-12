@@ -1,6 +1,6 @@
 ---
 title:  "[ML] 3D-CNN, two-stream action recognition paper review"
-excerpt: "Paper review of "3D-CNN" and "two-stream action recognition"
+excerpt: "Paper review of \"3D-CNN\" and \"two-stream action recognition\""
 
 categories:
   - ML 
