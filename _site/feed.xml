@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-11T18:53:42-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinyoung Kim</title><subtitle>personal description</subtitle><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><entry><title type="html">[프로그래머스] 순위 (python)</title><link href="http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_-%EC%88%9C%EC%9C%84_%ED%8C%8C%EC%9D%B4%EC%8D%AC/" rel="alternate" type="text/html" title="[프로그래머스] 순위 (python)" /><published>2021-06-12T00:00:00-07:00</published><updated>2021-06-12T16:59:00-07:00</updated><id>http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%20%EC%88%9C%EC%9C%84_%ED%8C%8C%EC%9D%B4%EC%8D%AC</id><content type="html" xml:base="http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_-%EC%88%9C%EC%9C%84_%ED%8C%8C%EC%9D%B4%EC%8D%AC/">&lt;h1 id=&quot;문제&quot;&gt;문제&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-12T22:05:45-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinyoung Kim</title><subtitle>personal description</subtitle><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><entry><title type="html">[프로그래머스] 디스크 컨트롤러 (java)</title><link href="http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_-%EB%94%94%EC%8A%A4%ED%81%AC%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC_%EC%9E%90%EB%B0%94/" rel="alternate" type="text/html" title="[프로그래머스] 디스크 컨트롤러 (java)" /><published>2021-06-13T00:00:00-07:00</published><updated>2021-06-13T16:59:00-07:00</updated><id>http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%20%EB%94%94%EC%8A%A4%ED%81%AC%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC_%EC%9E%90%EB%B0%94</id><content type="html" xml:base="http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_-%EB%94%94%EC%8A%A4%ED%81%AC%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC_%EC%9E%90%EB%B0%94/">&lt;h1 id=&quot;문제&quot;&gt;문제&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42627&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;풀이&quot;&gt;풀이&lt;/h1&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/*
+1. 전략
+    1. 시작_시각 기준으로 jobs array를 정렬한다.
+    2. 현재 실행_시간 안에 시작_시각이 포함되는 경우 수행_시간 기준으로 pq에 넣고 이 순서대로 반환한다.
+
+2. 정확성 증명
+   (1) 1 ~ n번째 수행되는 작업의 수행시간을 rt1~n
+   (2) 이들의 시작시간을 s1~n 으로 나타내었을 때 총 처리_시간은
+
+    tot_runtime =
+    (rt1) + (rt1+rt2) + (rt1 + rt2 + rt3) + (rt1 + rt2 + rt3 +rt4)... - (s1 + s2 + s3 ...)
+    = n*(rt1) + (n-1)*(rt2) + (n-2)(rt3) ... - sigma_1_to_n_(s_i)
+
+ =&amp;gt; 즉, 작업 수행 시간이 작은 순서대로 넣어야 최솟값을 가지는 Greedy Property를 가진다.
+
+3. 시간 복잡도
+jobs 정렬 + pq 삽입 + pq 인출 + const
+= O(nlg(n) + nlg(n) + nlg(n) + C)
+= O(nlg(n))
+ */&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Arrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.PriorityQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Sort jobs with 시작 시간 오름차순으로&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;o1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
+        &lt;span class=&quot;cm&quot;&gt;/*
+        // Check Sorted well
+        for (int[] e : jobs) {
+            System.out.printf(&quot;(%d, %d) \n&quot;, e[0], e[1]);
+        }
+        */&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// pq를 작업시간에 대하여 오름차순으로 선언&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;PriorityQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PriorityQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&amp;gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;o1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// 작업 수행 시작&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// 1. 현재 end 안에 시작 시각이 포함되는 모든 작업들 pq에 추가&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;pq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++]);&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+            &lt;span class=&quot;c1&quot;&gt;// 2. 만약 1.과 같은 작업이 없다면 다음 작업의 시작 시각을 end로 바꿔주기&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+
+            &lt;span class=&quot;c1&quot;&gt;// 3. pq에서 작업 시간이 작은 순서대로 꺼내서 ans와 end 갱신&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// 정답 값 반환: 여기서 int/int =&amp;gt; int임으로 소수점 알아서 절사!&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="프로그래머스" /><category term="구현" /><summary type="html">프로그래머스 Lv3 디스크 컨트롤러 구현 유형 자바 문제풀이</summary></entry><entry><title type="html">[프로그래머스] 순위 (python)</title><link href="http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_-%EC%88%9C%EC%9C%84_%ED%8C%8C%EC%9D%B4%EC%8D%AC/" rel="alternate" type="text/html" title="[프로그래머스] 순위 (python)" /><published>2021-06-12T00:00:00-07:00</published><updated>2021-06-12T16:59:00-07:00</updated><id>http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%20%EC%88%9C%EC%9C%84_%ED%8C%8C%EC%9D%B4%EC%8D%AC</id><content type="html" xml:base="http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_-%EC%88%9C%EC%9C%84_%ED%8C%8C%EC%9D%B4%EC%8D%AC/">&lt;h1 id=&quot;문제&quot;&gt;문제&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/49191&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
 
@@ -335,7 +410,7 @@
 
 &lt;span class=&quot;n&quot;&gt;timetable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;23:59&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timetable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="프로그래머스" /><category term="구현" /><summary type="html">프로그래머스 Lv3 &quot;[1차] 셔틀버스&quot; 구현 유형 파이썬 문제풀이</summary></entry><entry><title type="html">[프로그래머스] 입국심사 (java)</title><link href="http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%EC%B6%94%EC%84%9D%ED%8A%B8%EB%A0%88%ED%94%BD_%EC%9E%90%EB%B0%94/" rel="alternate" type="text/html" title="[프로그래머스] 입국심사 (java)" /><published>2021-06-09T00:00:00-07:00</published><updated>2021-06-09T16:59:00-07:00</updated><id>http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%EC%B6%94%EC%84%9D%ED%8A%B8%EB%A0%88%ED%94%BD_%EC%9E%90%EB%B0%94</id><content type="html" xml:base="http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%EC%B6%94%EC%84%9D%ED%8A%B8%EB%A0%88%ED%94%BD_%EC%9E%90%EB%B0%94/">&lt;h1 id=&quot;문제&quot;&gt;문제&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="프로그래머스" /><category term="구현" /><summary type="html">프로그래머스 Lv3 &quot;[1차] 셔틀버스&quot; 구현 유형 파이썬 문제풀이</summary></entry><entry><title type="html">[프로그래머스] 추석 트래픽 (java)</title><link href="http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%EC%B6%94%EC%84%9D%ED%8A%B8%EB%A0%88%ED%94%BD_%EC%9E%90%EB%B0%94/" rel="alternate" type="text/html" title="[프로그래머스] 추석 트래픽 (java)" /><published>2021-06-09T00:00:00-07:00</published><updated>2021-06-09T16:59:00-07:00</updated><id>http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%EC%B6%94%EC%84%9D%ED%8A%B8%EB%A0%88%ED%94%BD_%EC%9E%90%EB%B0%94</id><content type="html" xml:base="http://localhost:4000/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%EC%B6%94%EC%84%9D%ED%8A%B8%EB%A0%88%ED%94%BD_%EC%9E%90%EB%B0%94/">&lt;h1 id=&quot;문제&quot;&gt;문제&lt;/h1&gt;
 
 &lt;p&gt;https://programmers.co.kr/learn/courses/30/lessons/17676&lt;/p&gt;
 
@@ -612,46 +687,4 @@ number of way to reaching (x, y)
 
 &lt;h2 id=&quot;2-unionfind&quot;&gt;2. Union&amp;amp;Find&lt;/h2&gt;
 
-&lt;script src=&quot;https://gist.github.com/gimquokka/b8847df1d44e3f33fe55eded15c448f5.js&quot;&gt;&lt;/script&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="프로그래머스" /><summary type="html">프로그래머스 Lv3 네트워크 파이썬 문제풀이 BFS &amp; Union_Find</summary></entry><entry><title type="html">[CS] git add, commit, push를 한 명령어로 끝내기</title><link href="http://localhost:4000/cs/CS_git-add,-commit,-push-%ED%95%9C%EB%B2%88%EC%97%90-%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="[CS] git add, commit, push를 한 명령어로 끝내기" /><published>2021-05-19T00:00:00-07:00</published><updated>2021-05-19T16:59:00-07:00</updated><id>http://localhost:4000/cs/CS_git%20add,%20commit,%20push%20%ED%95%9C%EB%B2%88%EC%97%90%20%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/cs/CS_git-add,-commit,-push-%ED%95%9C%EB%B2%88%EC%97%90-%ED%95%98%EA%B8%B0/">&lt;h1 id=&quot;발단&quot;&gt;발단&lt;/h1&gt;
-
-&lt;p&gt;여러 사람이 함께 작업하는 공간이 아닌, 혼자만 사용하는 개인 repo에도 한 글자만 수정해도 최종적으로 github repo에 반영를 하기위해서는 git add . =&amp;gt; git commit -m “msg” =&amp;gt; git push를 모두 terminal에 작성해주어야 했다.&lt;/p&gt;
-
-&lt;p&gt;이게 어느 순간 상당이 번거롭다고 느껴져 구글링 하던 중, 좋은 방법이 있어 이를 공유하고자 한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;방법&quot;&gt;방법&lt;/h1&gt;
-
-&lt;p&gt;방법은 간단한데 Mac OS의 경우 root path에서 .bash_profile에 (.bashrc 아님 주의)/ window OS의 경우 .bashrc 파일 안에 아래의 함수를 추가해주면 된다.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Shortcut for&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# git add . =&amp;gt; git commit -m &quot;$*&quot; =&amp;gt; git push origin master&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;lazygit&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-    git commit &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$*&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-    git push
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;그리고 변경 사항을 terminal에 반영해주기 위하여 terminal에서 아래의 명령어를 실행 시켜주면 끝!&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bash_profile
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;그러면 lazygit message 만 terminal에 입력하면&lt;/p&gt;
-
-&lt;p&gt;git add . =&amp;gt; git commit -m “message” =&amp;gt; git push origin master를 한번에 수행해준다.&lt;/p&gt;
-
-&lt;h1 id=&quot;결과&quot;&gt;결과&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/118743400-44da7880-b88d-11eb-91fd-744c201e9ed5.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;위 그림과 같이 lazygit add python team note라고 terminal에 입력하면&lt;/p&gt;
-
-&lt;p&gt;git add . =&amp;gt; git commit -m “add python team note” =&amp;gt; git push origin master가&lt;/p&gt;
-
-&lt;p&gt;한 명령어로 순차적으로 수행되었음을 알 수 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/118743703-d0eca000-b88d-11eb-898b-626a0d21f30d.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;실제로 remote repository에도 잘된 것을 확인할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;참조: https://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one&lt;/small&gt;&lt;/p&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="TIL" /><summary type="html">매번 push 하기 위해 해야했던 git add, commit push를 한 명령어로 끝내봅시다!</summary></entry></feed>
+&lt;script src=&quot;https://gist.github.com/gimquokka/b8847df1d44e3f33fe55eded15c448f5.js&quot;&gt;&lt;/script&gt;</content><author><name>Jinyoung Kim</name><email>agpa22@gist.ac.kr</email></author><category term="프로그래머스" /><summary type="html">프로그래머스 Lv3 네트워크 파이썬 문제풀이 BFS &amp; Union_Find</summary></entry></feed>
