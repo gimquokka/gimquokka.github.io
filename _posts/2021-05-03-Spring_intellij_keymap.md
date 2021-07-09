@@ -47,3 +47,5 @@ last_modified_at: 2021-05-03T00:00:00-23:59
   - Generate Method in current class with blocked codes
 - Ctrl + tab(or + shift)
   - Change Opened window to next one (or reverse)
+- cmd+opt+v
+  - Introduce Variable
