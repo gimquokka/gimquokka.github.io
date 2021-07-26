@@ -1,34 +1,12 @@
-# main links links
+# main links
 main:
-  # - title: "Publications"
-  #   url: /publications/
-
-  # - title: "Talks"
-  #   url: /talks/
-
-  # - title: "Teaching"
-  #   url: /teaching/
-
-  # - title: "Portfolio"
-  #   url: /portfolio/
-
-  # - title: "Blog Posts"
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
   #   url: /year-archive/
-
-  # - title: "CV"
-  #   url: /cv/
-
-  # - title: "Guide"
-  #   url: /markdown/
-
-  - title: "Publications"
-    url: /publications/
-
-  - title: "Blog"
-    url: /categories/
-
-  - title: "CV"
-    url: /tba/
-
-  - title: "Portfolio"
-    url: /tba/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
