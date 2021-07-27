@@ -56,13 +56,13 @@ var store = [{
         "title": "[ML] SfMLearner Paper One-page Summary",
         "excerpt":"      ","categories": ["ML"],
         "tags": ["TIL"],
-        "url": "/ml/ML_PSM_Net/",
+        "url": "/ml/ML_SfMLearner_paper/",
         "teaser": "/assets/images/teaser.png"
       },{
         "title": "[ML] NetVLAD Paper One-page Summary",
         "excerpt":"   ","categories": ["ML"],
         "tags": ["TIL"],
-        "url": "/ml/ML_PSM_Net/",
+        "url": "/ml/ML_-NetVLAD/",
         "teaser": "/assets/images/teaser.png"
       },{
         "title": "[ML] SegNet Paper One-page Summary",
