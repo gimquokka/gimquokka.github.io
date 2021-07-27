@@ -271,7 +271,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      # read_time: true
       comments: true # 블로그 댓글 기능 true
       share: true
       related: true
@@ -285,7 +285,7 @@ defaults:
     values:
       layout: single
       author_profile: false
-      read_time: false
+      # read_time: false
       comments: false
       share: true
       related: false
