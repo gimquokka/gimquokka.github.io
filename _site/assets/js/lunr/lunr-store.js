@@ -202,4 +202,16 @@ var store = [{
         "tags": ["프로그래머스","그리디"],
         "url": "/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%ED%81%B0%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0_%EC%9E%90%EB%B0%94/",
         "teaser": "/assets/images/teaser.png"
+      },{
+        "title": "Python-Team-Notes for coding test",
+        "excerpt":"No matter how many algorithmic problems you solve, anyone who prepares for coding tests will soon be forgotten and find out how they solved them in the past. I also felt that I had a lot of experience and spent a lot of time in this process, so I felt the need to organize it systematically, so I organized Python-Team-Notes for coding tests. I hope that sharing the contents will help those who are preparing for many coding tests 👍   Sorting by type by importance is as follows: Click on the link below to go to that post.      Implementation            Rotating-matrix-90-degrees           BFS&amp;DFS   Binary Search   Dynamic Programming   Shorest Path   Graph Theory   Mathematics   The rest will soon be posted.   ","categories": ["PS"],
+        "tags": ["Algorithm"],
+        "url": "/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes_/",
+        "teaser": "/assets/images/teaser.png"
+      },{
+        "title": "Rotating-matrix-90-degrees with python",
+        "excerpt":"Introduce method to rotate python matrix by 90-degrees without libraries.   This post is part of Python-Team-Notes for coding test posting that I posted.   If you have any questions or mistakes regarding the code, please point it out!   def rotate_matrix_90_degrees(a):     # length of row     n = len(a)     # length of column     m = len(a[0]) \t\t     # array for storing result     result = [[0] * n for _ in range(m)] \t\t     # rotating element with rule     # if you couldn't under standing, drawing it on paper!     for i in range(n):         for j in range(m):             result[j][n-i-1] = a[i][j] \t\t     return result  ","categories": ["PS"],
+        "tags": ["Algorithm"],
+        "url": "/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Rotating-matrix-90-degrees/",
+        "teaser": "/assets/images/teaser.png"
       }]
