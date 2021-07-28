@@ -18,7 +18,7 @@ No matter how many algorithmic problems you solve, anyone who prepares for codin
 Sorting by type by importance is as follows: Click on the **link** below to go to that post.
 
 1. Implementation
-   1. [Rotating-matrix-90-degrees](https://gimquokka.github.io/ps/Rotating-matrix-90-degrees_with_python)
+   1. [Rotating-matrix-90-degrees](https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Rotating-matrix-90-degrees/)
 2. BFS&DFS
 3. Binary Search
 4. Dynamic Programming
