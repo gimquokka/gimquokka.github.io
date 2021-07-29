@@ -11,11 +11,9 @@ comments: true
 last_modified_at: 2021-07-28T00:00:00-23:59
 ---
 
-Introduce method to rotate python matrix by 90-degrees without libraries.
+Introduce method to **rotate python matrix by 90-degrees** without libraries. If you know the principles without additional libraries or complex code, you can easily solve them with simple python code. I hope you can acquire the following code by savoring it deeply.✍️
 
-This post is part of [Python-Team-Notes for coding test]() posting that I posted.
-
-If you have any questions or mistakes regarding the code, **please point it out!**
+This post is part of [Python-Team-Notes for coding test]() posting that I posted. If you have any questions or mistakes regarding the code, **please point it out!**
 
 
 
