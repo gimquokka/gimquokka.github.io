@@ -14,8 +14,6 @@ last_modified_at: 2021-07-29T00:00:00-23:59
 
 It's simple to think a little bit about how to change number system, but it's easy to get a head down when you encounter it in a real coding interview. That's why we need to prepare this thoroughly. Let's start with the code below!
 
-This post is part of [Python-Team-Notes for coding test]() posting that I posted. If you have any questions or mistakes regarding the code, **please point it out!**
-
 ```python
 # changing base-notation(number-system)
 
@@ -37,3 +35,5 @@ while n:
 # 3. When you change base to decimal
 int(tmp, 3)
 ```
+
+This post is part of [Python-Team-Notes for coding test](https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes/) posting that I posted. If you have any questions or mistakes regarding the code, **please point it out!**

@@ -67,4 +67,4 @@ result = Counter(re.findall('\d+', string))
 print(result) # Counter({% raw%}{'2': 4, '1': 3, '3': 2, '4': 1}{%endraw%})
 ```
 
-This post is part of [Python-Team-Notes for coding test]() posting that I posted. If you have any questions or mistakes regarding the code, **please point it out!**
+This post is part of [Python-Team-Notes for coding test](https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes/) posting that I posted. If you have any questions or mistakes regarding the code, **please point it out!**
