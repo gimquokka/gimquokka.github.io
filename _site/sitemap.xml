@@ -3,6 +3,36 @@
   
     
     <url>
+      <loc>https://gimquokka.github.io/ps/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7_parsing_practice/</loc>
+      
+        <lastmod>2021-08-02T00:00:00+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://gimquokka.github.io/ps/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7_changing_number_system/</loc>
+      
+        <lastmod>2021-07-29T00:00:00+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>https://gimquokka.github.io/ps/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7_Rotating-matrix-90-degrees/</loc>
       
         <lastmod>2021-07-28T00:00:00+09:00</lastmod>
@@ -18,7 +48,7 @@
   
     
     <url>
-      <loc>https://gimquokka.github.io/ps/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7_Python_Team_Notes_/</loc>
+      <loc>https://gimquokka.github.io/ps/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7_Python_Team_Notes/</loc>
       
         <lastmod>2021-07-28T00:00:00+09:00</lastmod>
       
@@ -318,7 +348,7 @@
   
     
     <url>
-      <loc>https://gimquokka.github.io/java/Spring_intellij_keymap/</loc>
+      <loc>https://gimquokka.github.io/dev/Spring_intellij_keymap/</loc>
       
         <lastmod>2021-05-03T00:00:00+09:00</lastmod>
       

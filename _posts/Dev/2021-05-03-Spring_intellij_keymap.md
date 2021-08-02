@@ -3,7 +3,7 @@ title:  "[Spring] Useful IntelliJ keyboard shortcut for Mac"
 excerpt: "Introduce useful IntelliJ keyboard shortcut for Mac OS"
 
 categories:
-  - Java
+  - Dev
 tags:
   - TIL
   - IntelliJ
