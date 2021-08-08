@@ -23,6 +23,7 @@ Sorting by type by importance is as follows: Click on the _**link**_ below to go
    3. [Parsing skill](https://gimquokka.github.io/ps/알고리즘_parsing_practice/)
 2. BFS&DFS
    1. [BFS (Breadth-First Search)](https://gimquokka.github.io/ps/알고리즘_bfs/)
+   2. [DFS (Depth-First Search)](https://gimquokka.github.io/ps/알고리즘_dfs/)
 3. Binary Search
 4. Dynamic Programming
 5. Shorest Path
