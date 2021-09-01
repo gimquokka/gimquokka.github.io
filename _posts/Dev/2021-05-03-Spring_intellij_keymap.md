@@ -1,5 +1,5 @@
 ---
-title:  "[Spring] Useful IntelliJ keyboard shortcut for Mac"
+title:  "[IntelliJ] Useful IntelliJ keyboard shortcut for Mac"
 excerpt: "Introduce useful IntelliJ keyboard shortcut for Mac OS"
 
 categories:

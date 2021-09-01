@@ -3,6 +3,66 @@
   
     
     <url>
+      <loc>https://gimquokka.github.io/retrospection/%E1%84%8B%E1%85%AB_%E1%84%8B%E1%85%AE%E1%84%85%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB_%E1%84%81%E1%85%AE%E1%84%8C%E1%85%AE%E1%86%AB%E1%84%92%E1%85%A1%E1%84%80%E1%85%A6_%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%85%E1%85%B3%E1%86%AF_%E1%84%92%E1%85%A1%E1%86%AF%E1%84%89%E1%85%AE%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%82%E1%85%B3%E1%86%AB%E1%84%80%E1%85%A5%E1%86%AF%E1%84%81%E1%85%A1/</loc>
+      
+        <lastmod>2021-08-28T00:00:00+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://gimquokka.github.io/ps/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7_binary_search/</loc>
+      
+        <lastmod>2021-08-09T00:00:00+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://gimquokka.github.io/ps/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7_dfs/</loc>
+      
+        <lastmod>2021-08-08T00:00:00+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://gimquokka.github.io/ps/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7_bfs/</loc>
+      
+        <lastmod>2021-08-07T00:00:00+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>https://gimquokka.github.io/ps/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%80%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%B7_parsing_practice/</loc>
       
         <lastmod>2021-08-02T00:00:00+09:00</lastmod>
