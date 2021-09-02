@@ -5,10 +5,12 @@ excerpt: "Overview Flow Net with one page summary"
 categories:
   - ML
 tags:
-  - TIL
+  - CV
 
 comments: true
 last_modified_at: 2021-04-19T22:00:00-00:00
+toc: true
+toc_sticky: true
 ---
 
 # 0. Reason for selection
