@@ -18,7 +18,9 @@ toc_sticky: true
 
 As time goes by, the quantitative measurement like MSE, PSNR in single-image super-resolution is improved by the breakthrough of CNN based deep neural network. Even though It is still hard  to get **finer texture details** at large upscaled SR images. Because there are some limitations of earlier approaches. By presenting SRGAN, the authors try to solve its problem.
 
-![](Aspose.Words.bc55961b-dd70-4365-86f3-f13febbb925b.002.jpeg)Figure 1: MSE loss tends to minimize loss by averaging of a possible solution. It hard to match finer texture details in existing CNN based network. But as seen in the figure, GAN generates one of possible solution **distribution**. It’s easy to get finer texture detail even in large- scaled SR images.
+![Aspose Words bc55961b-dd70-4365-86f3-f13febbb925b 002](https://user-images.githubusercontent.com/60743304/131794065-f6e1cf31-a498-4699-8290-c7e9b1a99f76.jpeg)
+
+Figure 1: MSE loss tends to minimize loss by averaging of a possible solution. It hard to match finer texture details in existing CNN based network. But as seen in the figure, GAN generates one of possible solution **distribution**. It’s easy to get finer texture detail even in large- scaled SR images.
 
 
 
@@ -26,21 +28,21 @@ As time goes by, the quantitative measurement like MSE, PSNR in single-image sup
 
 It is the main contribution of this paper to introduce **the perceptual loss function** with GAN.
 
-![](Aspose.Words.bc55961b-dd70-4365-86f3-f13febbb925b.003.jpeg)
+![Aspose Words bc55961b-dd70-4365-86f3-f13febbb925b 003](https://user-images.githubusercontent.com/60743304/131794151-b2e729a9-7a31-43ad-8e0f-94ab56fa7a4f.jpeg)
 
 Equation 1: It is the loss function of GAN. Both of the terms, that content loss, and adversarial loss use perceptual loss that is calculate loss with **feature map** extracted from VGG net, not a point pixel result value. By considering two-term at once, It can get an SR image that has finer texture detail.
 
-![](Aspose.Words.bc55961b-dd70-4365-86f3-f13febbb925b.004.jpeg)
+![Aspose Words bc55961b-dd70-4365-86f3-f13febbb925b 004](https://user-images.githubusercontent.com/60743304/131794234-24cf5c5d-5a83-40d5-b689-a97bb6afb716.jpeg)
 
 Equation 2: Content loss used for preventing **arbitrary generation result** by calculating loss LR image from generator and HR image.
 
-![](Aspose.Words.bc55961b-dd70-4365-86f3-f13febbb925b.005.jpeg)
+![Aspose Words bc55961b-dd70-4365-86f3-f13febbb925b 005](https://user-images.githubusercontent.com/60743304/131794273-6930f3f7-ecdb-442d-959d-46e46bf1a47c.jpeg)
 
 Equation3: It’s a common GAN loss. log(1-D) is original form, but usually it’s written -log(D). Because It is easy to train.
 
 
 
- ![](Aspose.Words.bc55961b-dd70-4365-86f3-f13febbb925b.006.jpeg)
+![Aspose Words bc55961b-dd70-4365-86f3-f13febbb925b 006](https://user-images.githubusercontent.com/60743304/131794103-10359348-8730-4feb-8c46-b3b49ddffd5c.jpeg)![](Aspose.Words.bc55961b-dd70-4365-86f3-f13febbb925b.006.jpeg)
 
 
 
