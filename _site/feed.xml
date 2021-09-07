@@ -1,5 +1,121 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://gimquokka.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gimquokka.github.io/" rel="alternate" type="text/html" /><updated>2021-08-28T23:43:52+09:00</updated><id>https://gimquokka.github.io/feed.xml</id><title type="html">Learning by DOing</title><subtitle>Talk is cheap.
-Show me the code.</subtitle><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><entry><title type="html">[Thinking] 왜 우린 꾸준하게 블로그를 할 수 없는걸까?</title><link href="https://gimquokka.github.io/retrospection/%EC%99%9C_%EC%9A%B0%EB%A6%AC%EB%8A%94_%EA%BE%B8%EC%A4%80%ED%95%98%EA%B2%8C_%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%ED%95%A0%EC%88%98%EC%97%86%EB%8A%94%EA%B1%B8%EA%B9%8C/" rel="alternate" type="text/html" title="[Thinking] 왜 우린 꾸준하게 블로그를 할 수 없는걸까?" /><published>2021-08-28T00:00:00+09:00</published><updated>2021-08-29T08:59:00+09:00</updated><id>https://gimquokka.github.io/retrospection/%EC%99%9C_%EC%9A%B0%EB%A6%AC%EB%8A%94_%EA%BE%B8%EC%A4%80%ED%95%98%EA%B2%8C_%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%ED%95%A0%EC%88%98%EC%97%86%EB%8A%94%EA%B1%B8%EA%B9%8C</id><content type="html" xml:base="https://gimquokka.github.io/retrospection/%EC%99%9C_%EC%9A%B0%EB%A6%AC%EB%8A%94_%EA%BE%B8%EC%A4%80%ED%95%98%EA%B2%8C_%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%ED%95%A0%EC%88%98%EC%97%86%EB%8A%94%EA%B1%B8%EA%B9%8C/">&lt;p&gt;평소 토비님의 유튜브를 이동하며 항상 듣고 있는데요, 그 중 백기선 님이 게스트로 나오신 편에서 기선 님이 해주신 말씀이 크게 공감이 되었습니다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://gimquokka.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gimquokka.github.io/" rel="alternate" type="text/html" /><updated>2021-09-07T12:32:32+09:00</updated><id>https://gimquokka.github.io/feed.xml</id><title type="html">Learning by DOing</title><subtitle>Talk is cheap.
+Show me the code.</subtitle><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><entry><title type="html">[Dev] 객체지향 생활체조 원칙</title><link href="https://gimquokka.github.io/dev/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%83%9D%ED%99%9C%EC%B2%B4%EC%A1%B0/" rel="alternate" type="text/html" title="[Dev] 객체지향 생활체조 원칙" /><published>2021-09-03T00:00:00+09:00</published><updated>2021-09-04T08:59:00+09:00</updated><id>https://gimquokka.github.io/dev/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%83%9D%ED%99%9C%EC%B2%B4%EC%A1%B0</id><content type="html" xml:base="https://gimquokka.github.io/dev/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%83%9D%ED%99%9C%EC%B2%B4%EC%A1%B0/">&lt;p&gt;맞춤분양필터(&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.swmaestro.toadhome&quot;&gt;Android&lt;/a&gt;  &lt;a href=&quot;https://apps.apple.com/kr/app/%EB%A7%9E%EC%B6%A4%EB%B6%84%EC%96%91%ED%95%84%ED%84%B0/id1574228236&quot;&gt;iOS&lt;/a&gt;)라는 앱에서 백엔드 파트를 담당하여 자바, 스프링 부트 기반으로 출시하여 운영중입니다.&lt;/p&gt;
+
+&lt;p&gt;신생 앱이다 보니 견고한 코드 보다는 기능구현 중심으로 &lt;strong&gt;일단 돌아가게 하자!&lt;/strong&gt;라는 생각으로 빠르게 코드를 짜고 배포하는 것을 반복하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;이후 이것들이 &lt;strong&gt;큰 부매랑&lt;/strong&gt;으로 돌아올 때가 많이 있었습니다. 예를 들어 외부 API를 사용하는 부분에서의 장애가 서비스로 장애전파가 되는 경우, 이후 버그리포팅이 들어와 로직을 수정해야하는 경우, 이후 다시 코드를 봤을때 한눈에 들어오지 않는 등…&lt;/p&gt;
+
+&lt;p&gt;위와 같은 경험을 하며 &lt;em&gt;좋은 코드란 무엇일까&lt;/em&gt;? &lt;em&gt;어떻게하면 유지보수 하기 쉽고&lt;/em&gt;,  _이후에 팀원이 들어오더라도 이해하기 쉬운 코드_를 만들 수 있을까?라는 생각을 하며 이런저런 자료를 찾던 중!&lt;/p&gt;
+
+&lt;p&gt;우아한테크세미나 박재성(포비)님의 TDD 리팩토링 강의를 굉장히 인상 깊게 보았고, 강의 중 객체지향 생활체조 원칙(리펙토링 원칙) 부분에 대하여 이후 두고두고 보고 싶어 기록해놓고자 합니다.&lt;/p&gt;
+
+&lt;p&gt;강의 링크도 가장 아래에 첨부해 놓겠습니다.&lt;/p&gt;
+
+&lt;h1 id=&quot;객체지향-생활체조-원칙&quot;&gt;객체지향 생활체조 원칙&lt;/h1&gt;
+
+&lt;p&gt;규칙 1. 한 메서드에 오직 한 단계의 들여쓰기만 한다.&lt;/p&gt;
+
+&lt;p&gt;규칙 2. else 예약어를 쓰지 않는다.&lt;/p&gt;
+
+&lt;p&gt;규칙 3. 모든 원시값과 문자열을 포장한다.&lt;/p&gt;
+
+&lt;p&gt;규칙 4. 한 줄에 점을 하나만 찍는다.&lt;/p&gt;
+
+&lt;p&gt;규칙 5. 줄여쓰지 않는다(축약 금지).&lt;/p&gt;
+
+&lt;p&gt;규칙 6. 모든 엔티티를 작게 유지한다.&lt;/p&gt;
+
+&lt;p&gt;규칙 7. 3개 이상의 인스턴스 변수를 가진 클래스를 쓰지 않는다.&lt;/p&gt;
+
+&lt;p&gt;규칙 8. 일급 콜랙션을 쓴다.&lt;/p&gt;
+
+&lt;p&gt;규칙 9. 게터/세터/프로퍼티를 쓰지 않는다.&lt;/p&gt;
+
+&lt;h2 id=&quot;클린코드&quot;&gt;클린코드&lt;/h2&gt;
+
+&lt;p&gt;메소드(함수)에서 이상적인 인자개수는 0개(무항)이다.&lt;/p&gt;
+
+&lt;p&gt;다음은 1개이고, 다음은 2개이다.&lt;/p&gt;
+
+&lt;p&gt;3개는 가능한 피하는 편이 좋다.&lt;/p&gt;
+
+&lt;p&gt;4개 이상은 특별한 이유가 있어도 사용하면 안된다.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/bIeqAlmNRrA&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="Dev" /><category term="Convention" /><category term="Java" /><summary type="html">객체지향 생활체조 원칙을 통해 바람직한 코드에 대한 정량적인 기준에 대하여 생각해봅니다.</summary></entry><entry><title type="html">[Think] 말이 통하는 개발자되기</title><link href="https://gimquokka.github.io/think/Dev_%EB%A7%90%EC%9D%B4_%ED%86%B5%ED%95%98%EB%8A%94_%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%90%98%EA%B8%B0/" rel="alternate" type="text/html" title="[Think] 말이 통하는 개발자되기" /><published>2021-09-02T00:00:00+09:00</published><updated>2021-09-03T08:59:00+09:00</updated><id>https://gimquokka.github.io/think/Dev_%EB%A7%90%EC%9D%B4_%ED%86%B5%ED%95%98%EB%8A%94_%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%90%98%EA%B8%B0</id><content type="html" xml:base="https://gimquokka.github.io/think/Dev_%EB%A7%90%EC%9D%B4_%ED%86%B5%ED%95%98%EB%8A%94_%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%90%98%EA%B8%B0/">&lt;p&gt;&lt;img width=&quot;488&quot; alt=&quot;(3) 뷰티팩토리 - 게시물 | Facebook 2021-09-02 14-34-49&quot; src=&quot;https://user-images.githubusercontent.com/60743304/131787728-576abb3b-e482-4a91-afd7-48c230f5ed21.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;지금까지 여러 IT (web/app) 프로젝트를 하면서 _“상대방은 왜 내마음을 몰라줄까요?”_라는 말이 비단 연애에서만 사용되는 것은 아니라는 것을 알게되었습니다…. :(&lt;/p&gt;
+
+&lt;p&gt;같은 한국어로 의사소통을 함에도 불구하고 직군과 직군 끼리 (개발자 &amp;lt;=&amp;gt; 기획자, 프론트 &amp;lt;=&amp;gt; 백엔드 등), 같은 직군끼리도 정말 소통이 잘되지 않는 경험을 많이 했습니다. 특히 요즘같은 코로나 시국에서는 원격으로 일을 하는 경우가 많았기 때문에 더욱 크게 와 닿는 것 같습니다.&lt;/p&gt;
+
+&lt;p&gt;커뮤니케이션 능력은 IT직군에서는 특히 중요하다고 생각합니다. 하나의 앱/웹을 출시하려고만 하더라도 기획자, 마케터, 디자이너, 프론트, 백앤드 개발자 등등 수 많은 분들의 협업을 통해 이루어지기 때문입니다.&lt;/p&gt;
+
+&lt;p&gt;이번 글에서는 지금까지 일하며 느껴온 고질적인 커뮤니케이션 문제유형과 바람직한 협업방식에 대하여 적어보도록하겠습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;문제점-1-잠수함-커뮤니케이션&quot;&gt;문제점 1. 잠수함 커뮤니케이션&lt;/h3&gt;
+
+&lt;p&gt;일을 정하고 이후 다시 물어보기 전까지는 그 어떠한 변동사항도 말하지 않는 경우 입니다. 가장 흔한 유형이 아닐까 생각되는데요.&lt;/p&gt;
+
+&lt;p&gt;예를 들어 데이터베이스 환경을 구축하는 업무를 내일 자정까지 끝내기로 한 경우, 문제가 생겨 그때까지 일을 끝내기 어렵거나 구현에 변동사항이 생겼음에도 다음 논의 때까지 혹은 물어보기 전까지 말하지 않고 잠수함 처럼 혼자만의 비밀로? 간직하는 경우를 자주 보았습니다.&lt;/p&gt;
+
+&lt;p&gt;이럴 경우 관련 일정, 및 구현 또한 모두 변경되어야해서 이해관계자가 모두의 합의가 필요한데요. 마감기한이 다되어서야 업무가 다 끝나지 않았고, 명세 또한 바뀌어 있다는 것을 알았다면 어떨까요….? 간담이 서늘해지는 일이 아닐 수 없습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;문제점-2-질문하지-않는-한국인&quot;&gt;문제점 2. 질문하지 않는 한국인&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/131789541-53ea82b7-4196-4fd2-8dac-40f46312b357.png&quot; alt=&quot;eca788ebacb8ec9786eb8a94-ec82aced9a8c2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;‘질문하지 않는 한국인’ 익히 우리가 알고 있는 문제로 우리나라 교육의 특성상 우리는 질문을 잃어버린 사회에서 살아 왔습니다.&lt;/p&gt;
+
+&lt;p&gt;협업에 있어서도 이러한 경우를 많이 보았습니다. 예를 들어 해커톤에 참여해서 다른 분에게 A라는 업무를 부탁했을 때, 모르는 것을 모른다고 하지 않고 끝까지 혼자하려고 하다가 결국 팀 전체가 프로젝트를 완수하는 것에 실패하게 되는 경우 입니다.&lt;/p&gt;
+
+&lt;p&gt;각자 자신의 맞은 일 또한 벅차기에 다른 팀원에게 먼저 다가가 “뭐 도와드릴까요?” 라는 말을 하기 쉽지 않은 상황이 자주 있다 생각하는데요.&lt;/p&gt;
+
+&lt;p&gt;이런 경우 초보자 분들은 본인이 할 수 있는데까지 최선을 다해서 해보고, “A가 문제라 알아보았고 그 결과 B, C, D 까지 해보았으나 문제를 해결하지 못했습니다. 다음으로 F를 고려하고 있는데 어떻게 생각하시나요?”라고 본인이 지금까지 고민한 것을 조리있게 정리하여 조금 더 실력이 있으신 분에게 물어 본다면 본인의 성장에도, 팀의 발전에도 모두 좋은 일이 아닐까 합니다.&lt;/p&gt;
+
+&lt;p&gt;관련하여 어떤 시니어 분의 말씀이 인상 깊었는데요. “신입은 어떤 일을 해야하나요?” 라는 질문에 &lt;strong&gt;“신입은 질문하는 것이 주된 업무라고 생각합니다.”&lt;/strong&gt;라고 답변해주셨던 것이 기억에 남습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;문제점-3-유아독존&quot;&gt;문제점 3. 유아독존&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/131789679-ac1aa269-6165-4631-9c08-6ff0228d90a0.jpeg&quot; alt=&quot;812_656_3349&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;본인이 협업하기 가장 힘든 유형이 아닐까 생각하는데요… 설득될 준비가 되지 않은 분과 토의를 하는 것 만큼 고통스러운 것이 없는 것 같습니다.&lt;/p&gt;
+
+&lt;p&gt;예를 들어 Java 프로젝트에 JPA ORM을 도입하는 안건이 나왔다고하면 JPA 튜닝하기 힘든데 뭐하러 그런 것을 쓰나요? MyBatis를 왜 안쓰시나요? (얼마전에 들은 이야기….) 라는 등… 본인만의 확고한 의견이 있어 이야기를 들을 준비가 되지 않은 분들 종종 보곤합니다.&lt;/p&gt;
+
+&lt;p&gt;위 예시에서 jpa가 무조건 좋다라기 보다도, ‘A는 옳고 B는 아니야’ 라는 단언적인 태도는 팀 전체에 도움이 되지 않는다고 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;이동욱 님께서 세미나에서 말씀해주셨던 것과 같이 &lt;strong&gt;“설득 당할 수 있는 시니어, 설득할 수 있는 주니어”&lt;/strong&gt;가 되기 위해 우리 모두 노력하는 것은 어떨까요?&lt;/p&gt;
+
+&lt;h3 id=&quot;해결책-다른-사람이-내-상황을-1도-모른다&quot;&gt;해결책. 다른 사람이 내 상황을 1도 모른다.&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/131790481-48241a2f-6e0f-4432-bded-69b55614598e.jpeg&quot; alt=&quot;56c4206414ed70951ec6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;제가 생각하기에 위와 같은 문제를 해결할 수 있는 가장 좋은 방법은 &lt;strong&gt;“다른 사람은 나에 대하여 1도 모른다.”&lt;/strong&gt;라는 것을 기본 공리로 가지고 소통하는 것입니다.&lt;/p&gt;
+
+&lt;p&gt;같은 팀에서 업무를 하더라도 생각보다 다른 팀원들에게 관심이 없는 경우가 많습니다.  본인 업무도 하기 바쁘기 때문이겠지요.&lt;/p&gt;
+
+&lt;p&gt;배민의 경우 ‘4. 잡담을 많이 나누는 것이 경쟁력이다.’라고 일잘하는 법에 명시해 놓은 것처럼 타인에 대한 관심을 바탕으로 소통을 장려하고 있습니다. 이것이 정말로 잡담을 해라 라는 말 보다는 본인이 처한 상황(Context)를 최대한 동료들에게 많이 전달하라는 뜻으로 저는 이해하였는데요.&lt;/p&gt;
+
+&lt;p&gt;저 또한 협업시 최대한 저의 업무적, 상황적 정보를 짜잘하게라도 많이 전달하기 위해 노력하고 있습니다. 그 결과 팀원과 저 사이의 사전정보 불일치로 인한 Comunication cost가 낮아지는 경험을 할 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;마지막으로 정리하면 &lt;strong&gt;기본으로 타인은 내가 하는 일에 대하여 아무것도 모르고 있다&lt;/strong&gt;고 가정하고 대화를 한다면 휠씬 더 효율적인, ‘말이 통하는 개발자’가 될 수 있지 않을까 생각합니다.&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="Think" /><category term="Work" /><category term="Korean" /><category term="생각정리" /><summary type="html">IT(app/web) 프로젝트 협업을 하면서 느낀 문제점과 개선방안에 대하여 이야기 합니다.</summary></entry><entry><title type="html">[Spring] Response json에서 boolean의 is가 생략되는 문제</title><link href="https://gimquokka.github.io/dev/Spring_Jackson_is_%EC%83%9D%EB%9E%B5%EB%AC%B8%EC%A0%9C/" rel="alternate" type="text/html" title="[Spring] Response json에서 boolean의 is가 생략되는 문제" /><published>2021-09-01T00:00:00+09:00</published><updated>2021-09-02T08:59:00+09:00</updated><id>https://gimquokka.github.io/dev/Spring_Jackson_is_%EC%83%9D%EB%9E%B5%EB%AC%B8%EC%A0%9C</id><content type="html" xml:base="https://gimquokka.github.io/dev/Spring_Jackson_is_%EC%83%9D%EB%9E%B5%EB%AC%B8%EC%A0%9C/">&lt;h1 id=&quot;문제&quot;&gt;문제&lt;/h1&gt;
+
+&lt;p&gt;Spring Boot에서 Dto로 Response를 반환 시 primitive boolean type의 변수의 변수명이 is~로 시작하면 is가 생략되는 재미있는? 문제가 있었습니다. Spring Boot에서는 Response 시 자바 객체를  jackson library를 이용하여 json으로 매핑하여 반환하기 때문에 정확히는 jackson의 특징일 것 입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;618&quot; alt=&quot;todhome-backend-v0 1 – FiltermapVo java 2021-09-01 17-15-17&quot; src=&quot;https://user-images.githubusercontent.com/60743304/131636875-475f2602-ccb7-4340-91d7-82bd91145d2c.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;해결&quot;&gt;해결&lt;/h1&gt;
+
+&lt;p&gt;구글링 결과 JsonProperty annotation을 이용하여 json 매핑 될 key 값을 강제지정 해주면 된다고 하여 시도해보았습니다.&lt;/p&gt;
+
+&lt;p&gt;그 결과 JsonProperty 값과 원래 변수 값이 모두 출력되는 더욱 놀라운 문제가 발생하였습니다….ㅎ&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/131637058-30d5880e-ee56-45bc-8025-235fde6f158b.png&quot; alt=&quot;todhome-backend-v0 1 – FiltermapVo java 2021-09-01 17-16-40&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이후 간단히 Wrapper type을 이용하여 primitive type의 boolean을 Boolean Class type으로 수정함으로서 문제를 해결할 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;511&quot; alt=&quot;todhome-backend-v0 1 – FiltermapVo java 2021-09-01 17-12-40&quot; src=&quot;https://user-images.githubusercontent.com/60743304/131636684-c7f58b92-a9ce-425d-97a9-2cb99dc8b71e.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;대단한 문제는 아니지만 처음 마주치면 버그를 잡기 힘든? 재미있는 문제인 것 같아 공유하게 되었습니다.&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="Dev" /><category term="Troubleshooting" /><category term="Spring" /><category term="Jackson" /><summary type="html">Response json에서 boolean의 is가 생략되는 문제를 해결합니다.</summary></entry><entry><title type="html">[Think] 왜 우린 꾸준하게 블로그를 할 수 없는걸까?</title><link href="https://gimquokka.github.io/think/%EC%99%9C_%EC%9A%B0%EB%A6%AC%EB%8A%94_%EA%BE%B8%EC%A4%80%ED%95%98%EA%B2%8C_%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%ED%95%A0%EC%88%98%EC%97%86%EB%8A%94%EA%B1%B8%EA%B9%8C/" rel="alternate" type="text/html" title="[Think] 왜 우린 꾸준하게 블로그를 할 수 없는걸까?" /><published>2021-08-28T00:00:00+09:00</published><updated>2021-08-29T08:59:00+09:00</updated><id>https://gimquokka.github.io/think/%EC%99%9C_%EC%9A%B0%EB%A6%AC%EB%8A%94_%EA%BE%B8%EC%A4%80%ED%95%98%EA%B2%8C_%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%ED%95%A0%EC%88%98%EC%97%86%EB%8A%94%EA%B1%B8%EA%B9%8C</id><content type="html" xml:base="https://gimquokka.github.io/think/%EC%99%9C_%EC%9A%B0%EB%A6%AC%EB%8A%94_%EA%BE%B8%EC%A4%80%ED%95%98%EA%B2%8C_%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%ED%95%A0%EC%88%98%EC%97%86%EB%8A%94%EA%B1%B8%EA%B9%8C/">&lt;p&gt;평소 토비님의 유튜브를 이동하며 항상 듣고 있는데요, 그 중 백기선 님이 게스트로 나오신 편에서 기선 님이 해주신 말씀이 크게 공감이 되었습니다.&lt;/p&gt;
 
 &lt;p&gt;“처음에는 누가 보겠어~라는 생각으로 그냥 꾸준하게 공부한 내용을 올릴 때는 꾸준하게 블로그를 할 수 있었는데(실제로 포스팅이 3000건 이상….), 제 블로그를 보는 사람이 많아지며 나만 아는 새로운 것을 써야 한다는 부담감이 들면서 블로그 글을 안 쓰기 시작한 것 같아요.”&lt;/p&gt;
 
@@ -11,7 +127,7 @@ Show me the code.</subtitle><author><name>gimquokka</name><email>gimquokka@gmail
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/5GOEDWGn_v0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;위 내용 관련하여 많이 공감되는 내용의 유튜브 영상이 있어 공유합니다&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="Retrospection" /><category term="Korean" /><category term="생각정리" /><summary type="html">초심과 다르게 꾸준하게 블로그 글을 쓰지 못했던 이유에 대하여 회고해봅니다.</summary></entry><entry><title type="html">Binary Search with python</title><link href="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_binary_search/" rel="alternate" type="text/html" title="Binary Search with python" /><published>2021-08-09T00:00:00+09:00</published><updated>2021-08-11T08:59:00+09:00</updated><id>https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_binary_search</id><content type="html" xml:base="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_binary_search/">&lt;p&gt;Will be added!&lt;/p&gt;
+&lt;p&gt;위 내용 관련하여 많이 공감되는 내용의 유튜브 영상이 있어 공유합니다&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="Think" /><category term="Korean" /><category term="생각정리" /><summary type="html">초심과 다르게 꾸준하게 블로그 글을 쓰지 못했던 이유에 대하여 회고해봅니다.</summary></entry><entry><title type="html">Binary Search with python</title><link href="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_binary_search/" rel="alternate" type="text/html" title="Binary Search with python" /><published>2021-08-09T00:00:00+09:00</published><updated>2021-08-11T08:59:00+09:00</updated><id>https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_binary_search</id><content type="html" xml:base="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_binary_search/">&lt;p&gt;Will be added!&lt;/p&gt;
 
 &lt;h2 id=&quot;binary-search-algorithm&quot;&gt;Binary Search algorithm&lt;/h2&gt;
 
@@ -129,7 +245,41 @@ Show me the code.</subtitle><author><name>gimquokka</name><email>gimquokka@gmail
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Counter({'2': 4, '1': 3, '3': 2, '4': 1})
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This post is part of &lt;a href=&quot;https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes/&quot;&gt;Python-Team-Notes for coding test&lt;/a&gt; posting that I posted. If you have any questions or mistakes regarding the code, &lt;strong&gt;please point it out!&lt;/strong&gt;&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="PS" /><category term="Algorithm" /><category term="Implementation" /><summary type="html">Introduce various useful parsing technique for real coding test</summary></entry><entry><title type="html">Changing base-notation(number-system) with python</title><link href="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_changing_number_system/" rel="alternate" type="text/html" title="Changing base-notation(number-system) with python" /><published>2021-07-29T00:00:00+09:00</published><updated>2021-07-30T08:59:00+09:00</updated><id>https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_changing_number_system</id><content type="html" xml:base="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_changing_number_system/">&lt;p&gt;It’s simple to think a little bit about how to change number system, but it’s easy to get a head down when you encounter it in a real coding interview. That’s why we need to prepare this thoroughly. Let’s start with the code below!&lt;/p&gt;
+&lt;p&gt;This post is part of &lt;a href=&quot;https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes/&quot;&gt;Python-Team-Notes for coding test&lt;/a&gt; posting that I posted. If you have any questions or mistakes regarding the code, &lt;strong&gt;please point it out!&lt;/strong&gt;&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="PS" /><category term="Algorithm" /><category term="Implementation" /><summary type="html">Introduce various useful parsing technique for real coding test</summary></entry><entry><title type="html">[ML] SRGAN one page summary</title><link href="https://gimquokka.github.io/ml/ML_SRGAN_Summary/" rel="alternate" type="text/html" title="[ML] SRGAN one page summary" /><published>2021-08-01T00:00:00+09:00</published><updated>2021-08-02T07:00:00+09:00</updated><id>https://gimquokka.github.io/ml/ML_SRGAN_Summary</id><content type="html" xml:base="https://gimquokka.github.io/ml/ML_SRGAN_Summary/">&lt;h1 id=&quot;1-problem&quot;&gt;1. Problem&lt;/h1&gt;
+
+&lt;p&gt;As time goes by, the quantitative measurement like MSE, PSNR in single-image super-resolution is improved by the breakthrough of CNN based deep neural network. Even though It is still hard  to get &lt;strong&gt;finer texture details&lt;/strong&gt; at large upscaled SR images. Because there are some limitations of earlier approaches. By presenting SRGAN, the authors try to solve its problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/131794065-f6e1cf31-a498-4699-8290-c7e9b1a99f76.jpeg&quot; alt=&quot;Aspose Words bc55961b-dd70-4365-86f3-f13febbb925b 002&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure 1: MSE loss tends to minimize loss by averaging of a possible solution. It hard to match finer texture details in existing CNN based network. But as seen in the figure, GAN generates one of possible solution &lt;strong&gt;distribution&lt;/strong&gt;. It’s easy to get finer texture detail even in large- scaled SR images.&lt;/p&gt;
+
+&lt;h1 id=&quot;2-solution&quot;&gt;2. Solution&lt;/h1&gt;
+
+&lt;p&gt;It is the main contribution of this paper to introduce &lt;strong&gt;the perceptual loss function&lt;/strong&gt; with GAN.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/131794151-b2e729a9-7a31-43ad-8e0f-94ab56fa7a4f.jpeg&quot; alt=&quot;Aspose Words bc55961b-dd70-4365-86f3-f13febbb925b 003&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Equation 1: It is the loss function of GAN. Both of the terms, that content loss, and adversarial loss use perceptual loss that is calculate loss with &lt;strong&gt;feature map&lt;/strong&gt; extracted from VGG net, not a point pixel result value. By considering two-term at once, It can get an SR image that has finer texture detail.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/131794234-24cf5c5d-5a83-40d5-b689-a97bb6afb716.jpeg&quot; alt=&quot;Aspose Words bc55961b-dd70-4365-86f3-f13febbb925b 004&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Equation 2: Content loss used for preventing &lt;strong&gt;arbitrary generation result&lt;/strong&gt; by calculating loss LR image from generator and HR image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/131794273-6930f3f7-ecdb-442d-959d-46e46bf1a47c.jpeg&quot; alt=&quot;Aspose Words bc55961b-dd70-4365-86f3-f13febbb925b 005&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Equation3: It’s a common GAN loss. log(1-D) is original form, but usually it’s written -log(D). Because It is easy to train.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/60743304/131794103-10359348-8730-4feb-8c46-b3b49ddffd5c.jpeg&quot; alt=&quot;Aspose Words bc55961b-dd70-4365-86f3-f13febbb925b 006&quot; /&gt;&lt;img src=&quot;Aspose.Words.bc55961b-dd70-4365-86f3-f13febbb925b.006.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-result&quot;&gt;3. Result&lt;/h1&gt;
+
+&lt;p&gt;Figure 2: Compare with the others, it seems like SRGAN  gives us a much sharp HR image that has a marginally high MOS value. Nonetheless, SRResNet has high PSNR and SSIM. The reason is that,  As  I  mark in the image,  GAN gives us a noise result that is not the same as the original image. It is one of the characteristics of GAN model. The reason is that learn the distribution of data, and &lt;strong&gt;generate&lt;/strong&gt; a result. So, there is a hardship to constrain generation.&lt;/p&gt;
+
+&lt;h1 id=&quot;4-opinion&quot;&gt;4. Opinion&lt;/h1&gt;
+
+&lt;p&gt;The loss is a super important factor in model training. SRGAN uses perceptual loss. It means that the feature map extracted from the network is super important. What if using a more advanced network than VGG net?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;All credit by Ledig et al., “Photo-Realistic Single Image Super Resolution Using a Generative Adversarial Network”., CVPR 2017&lt;/em&gt;&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="ML" /><category term="CV" /><category term="GAN" /><summary type="html">I introduce SR-GAN brifely with one page summary</summary></entry><entry><title type="html">Changing base-notation(number-system) with python</title><link href="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_changing_number_system/" rel="alternate" type="text/html" title="Changing base-notation(number-system) with python" /><published>2021-07-29T00:00:00+09:00</published><updated>2021-07-30T08:59:00+09:00</updated><id>https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_changing_number_system</id><content type="html" xml:base="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_changing_number_system/">&lt;p&gt;It’s simple to think a little bit about how to change number system, but it’s easy to get a head down when you encounter it in a real coding interview. That’s why we need to prepare this thoroughly. Let’s start with the code below!&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# changing base-notation(number-system)
 &lt;/span&gt;
@@ -152,154 +302,4 @@ Show me the code.</subtitle><author><name>gimquokka</name><email>gimquokka@gmail
 &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This post is part of &lt;a href=&quot;https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes/&quot;&gt;Python-Team-Notes for coding test&lt;/a&gt; posting that I posted. If you have any questions or mistakes regarding the code, &lt;strong&gt;please point it out!&lt;/strong&gt;&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="PS" /><category term="Algorithm" /><category term="Implementation" /><summary type="html">Introduce the way that changing base-notation(number-system)</summary></entry><entry><title type="html">Python-Team-Notes for coding test</title><link href="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes/" rel="alternate" type="text/html" title="Python-Team-Notes for coding test" /><published>2021-07-28T00:00:00+09:00</published><updated>2021-07-29T08:59:00+09:00</updated><id>https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes</id><content type="html" xml:base="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes/">&lt;p&gt;No matter how many algorithmic problems you solve, anyone who prepares for coding tests will soon be forgotten and find out how they solved them in the past. I also felt that I had a lot of experience and spent a lot of time in this process, so I felt the need to organize it systematically, so I organized &lt;em&gt;&lt;strong&gt;Python-Team-Notes&lt;/strong&gt;&lt;/em&gt; for coding tests. I hope that sharing the contents will help those who are preparing for many coding tests 👍&lt;/p&gt;
-
-&lt;p&gt;Sorting by type by importance is as follows: Click on the &lt;em&gt;&lt;strong&gt;link&lt;/strong&gt;&lt;/em&gt; below to go to that post.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Implementation
-    &lt;ol&gt;
-      &lt;li&gt;&lt;a href=&quot;https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Rotating-matrix-90-degrees/&quot;&gt;Rotating-matrix-90-degrees&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://gimquokka.github.io/ps/알고리즘_changing_number_system/&quot;&gt;Changing base-notation(number-system)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://gimquokka.github.io/ps/알고리즘_parsing_practice/&quot;&gt;Parsing skill&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;BFS&amp;amp;DFS
-    &lt;ol&gt;
-      &lt;li&gt;&lt;a href=&quot;https://gimquokka.github.io/ps/알고리즘_bfs/&quot;&gt;BFS (Breadth-First Search)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://gimquokka.github.io/ps/알고리즘_dfs/&quot;&gt;DFS (Depth-First Search)&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gimquokka.github.io/ps/알고리즘_binary_search/&quot;&gt;Binary Search&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Dynamic Programming&lt;/li&gt;
-  &lt;li&gt;Shorest Path&lt;/li&gt;
-  &lt;li&gt;Graph Theory&lt;/li&gt;
-  &lt;li&gt;Mathematics&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;small&gt;The rest will soon be posted.&lt;/small&gt;&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="PS" /><category term="Algorithm" /><summary type="html">Introduce my python-team-note for coding test</summary></entry><entry><title type="html">Rotating-matrix-90-degrees with python</title><link href="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Rotating-matrix-90-degrees/" rel="alternate" type="text/html" title="Rotating-matrix-90-degrees with python" /><published>2021-07-28T00:00:00+09:00</published><updated>2021-07-29T08:59:00+09:00</updated><id>https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Rotating-matrix-90-degrees</id><content type="html" xml:base="https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Rotating-matrix-90-degrees/">&lt;p&gt;Introduce method to &lt;strong&gt;rotate python matrix by 90-degrees&lt;/strong&gt; without libraries. If you know the principles without additional libraries or complex code, you can easily solve them with simple python code. I hope you can acquire the following code by savoring it deeply.✍️&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rotate_matrix_90_degrees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# length of row
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# length of column
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-		
-    &lt;span class=&quot;c1&quot;&gt;# array for storing result
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-		
-    &lt;span class=&quot;c1&quot;&gt;# rotating element with rule
-&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# if you couldn't under standing, drawing it on paper!
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-		
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This post is part of &lt;a href=&quot;https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes/&quot;&gt;Python-Team-Notes for coding test&lt;/a&gt; posting that I posted. If you have any questions or mistakes regarding the code, &lt;strong&gt;please point it out!&lt;/strong&gt;&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="PS" /><category term="Algorithm" /><summary type="html">Method to rotate python matrix by 90-degrees without libraries</summary></entry><entry><title type="html">[프로그래머스] 큰 수 만들기 (java)</title><link href="https://gimquokka.github.io/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%ED%81%B0%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0_%EC%9E%90%EB%B0%94/" rel="alternate" type="text/html" title="[프로그래머스] 큰 수 만들기 (java)" /><published>2021-07-09T00:00:00+09:00</published><updated>2021-07-10T08:59:00+09:00</updated><id>https://gimquokka.github.io/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%ED%81%B0%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0_%EC%9E%90%EB%B0%94</id><content type="html" xml:base="https://gimquokka.github.io/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%ED%81%B0%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0_%EC%9E%90%EB%B0%94/">&lt;h1 id=&quot;문제&quot;&gt;문제&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42883&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;풀이&quot;&gt;풀이&lt;/h1&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// StringBuilder를 쓰는 것이 char[] 보다 더 빠르고 간편함&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;//        StringBuilder ans = new StringBuilder();&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-
-        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tempChar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;tempChar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;charAt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tempChar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'0'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tempChar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'0'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;'0'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;//        return ans.toString();&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;valueOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;cm&quot;&gt;/*
-    @Test
-    public void 정답() {
-        assertEquals(&quot;94&quot;, solution(&quot;1924&quot;, 2));
-        assertEquals(&quot;3234&quot;, solution(&quot;1231234&quot;, 3));
-        assertEquals(&quot;775841&quot;, solution(&quot;4177252841&quot;, 4));
-    }
-
-*/&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="PS" /><category term="프로그래머스" /><category term="그리디" /><summary type="html">프로그래머스 Lv2 큰 수 만들기 자바 문제풀이</summary></entry><entry><title type="html">[프로그래머스] 타겟 넘버 (python)</title><link href="https://gimquokka.github.io/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84_%ED%8C%8C%EC%9D%B4%EC%8D%AC/" rel="alternate" type="text/html" title="[프로그래머스] 타겟 넘버 (python)" /><published>2021-06-22T00:00:00+09:00</published><updated>2021-06-23T08:59:00+09:00</updated><id>https://gimquokka.github.io/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84_%ED%8C%8C%EC%9D%B4%EC%8D%AC</id><content type="html" xml:base="https://gimquokka.github.io/ps/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84_%ED%8C%8C%EC%9D%B4%EC%8D%AC/">&lt;h1 id=&quot;문제&quot;&gt;문제&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/43165&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;풀이&quot;&gt;풀이&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;global 사용하지 않은 풀이&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;# arr = numbers
-&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# num =  target 
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-    
-    &lt;span class=&quot;n&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;
-    
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;# print(idx)
-&lt;/span&gt;    
-    &lt;span class=&quot;n&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;global을 사용하여 parameter를 넘기지 않는 코드&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;
-    
-    &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-    
-    &lt;span class=&quot;n&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;
-    
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-    
-    &lt;span class=&quot;n&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="PS" /><category term="프로그래머스" /><category term="dfs" /><summary type="html">프로그래머스 Lv2 타겟 넘버 dfs 유형 파이썬 문제풀이</summary></entry></feed>
+&lt;p&gt;This post is part of &lt;a href=&quot;https://gimquokka.github.io/ps/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_Python_Team_Notes/&quot;&gt;Python-Team-Notes for coding test&lt;/a&gt; posting that I posted. If you have any questions or mistakes regarding the code, &lt;strong&gt;please point it out!&lt;/strong&gt;&lt;/p&gt;</content><author><name>gimquokka</name><email>gimquokka@gmail.com</email></author><category term="PS" /><category term="Algorithm" /><category term="Implementation" /><summary type="html">Introduce the way that changing base-notation(number-system)</summary></entry></feed>
