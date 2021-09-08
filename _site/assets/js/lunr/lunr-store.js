@@ -252,9 +252,9 @@ var store = [{
         "teaser": "/assets/images/teaser.png"
       },{
         "title": "[Spring] Response json에서 boolean의 is가 생략되는 문제",
-        "excerpt":"문제   Spring Boot에서 Dto로 Response를 반환 시 primitive boolean type의 변수의 변수명이 is~로 시작하면 is가 생략되는 재미있는? 문제가 있었습니다. Spring Boot에서는 Response 시 자바 객체를  jackson library를 이용하여 json으로 매핑하여 반환하기 때문에 정확히는 jackson의 특징일 것 입니다.      해결   구글링 결과 JsonProperty annotation을 이용하여 json 매핑 될 key 값을 강제지정 해주면 된다고 하여 시도해보았습니다.   그 결과 JsonProperty 값과 원래 변수 값이 모두 출력되는 더욱 놀라운 문제가 발생하였습니다….ㅎ      이후 간단히 Wrapper type을 이용하여 primitive type의 boolean을 Boolean Class type으로 수정함으로서 문제를 해결할 수 있었습니다.      대단한 문제는 아니지만 처음 마주치면 버그를 잡기 힘든? 재미있는 문제인 것 같아 공유하게 되었습니다.  ","categories": ["Dev"],
-        "tags": ["Troubleshooting","Spring","Jackson"],
-        "url": "/dev/Spring_Jackson_is_%EC%83%9D%EB%9E%B5%EB%AC%B8%EC%A0%9C/",
+        "excerpt":"문제   Spring Boot에서 Dto로 Response를 반환 시 primitive boolean type의 변수의 변수명이 is~로 시작하면 is가 생략되는 재미있는? 문제가 있었습니다. Spring Boot에서는 Response 시 자바 객체를  jackson library를 이용하여 json으로 매핑하여 반환하기 때문에 정확히는 jackson의 특징일 것 입니다.      해결   구글링 결과 JsonProperty annotation을 이용하여 json 매핑 될 key 값을 강제지정 해주면 된다고 하여 시도해보았습니다.   그 결과 JsonProperty 값과 원래 변수 값이 모두 출력되는 더욱 놀라운 문제가 발생하였습니다….ㅎ      이후 간단히 Wrapper type을 이용하여 primitive type의 boolean을 Boolean Class type으로 수정함으로서 문제를 해결할 수 있었습니다.      대단한 문제는 아니지만 처음 마주치면 버그를 잡기 힘든? 재미있는 문제인 것 같아 공유하게 되었습니다.  ","categories": ["Spring"],
+        "tags": ["Troubleshooting","Jackson"],
+        "url": "/spring/Spring_Jackson_is_%EC%83%9D%EB%9E%B5%EB%AC%B8%EC%A0%9C/",
         "teaser": "/assets/images/teaser.png"
       },{
         "title": "[Think] 말이 통하는 개발자되기",
@@ -267,5 +267,11 @@ var store = [{
         "excerpt":"맞춤분양필터(Android  iOS)라는 앱에서 백엔드 파트를 담당하여 자바, 스프링 부트 기반으로 출시하여 운영중입니다.   신생 앱이다 보니 견고한 코드 보다는 기능구현 중심으로 일단 돌아가게 하자!라는 생각으로 빠르게 코드를 짜고 배포하는 것을 반복하고 있습니다.   이후 이것들이 큰 부매랑으로 돌아올 때가 많이 있었습니다. 예를 들어 외부 API를 사용하는 부분에서의 장애가 서비스로 장애전파가 되는 경우, 이후 버그리포팅이 들어와 로직을 수정해야하는 경우, 이후 다시 코드를 봤을때 한눈에 들어오지 않는 등…   위와 같은 경험을 하며 좋은 코드란 무엇일까? 어떻게하면 유지보수 하기 쉽고,  _이후에 팀원이 들어오더라도 이해하기 쉬운 코드_를 만들 수 있을까?라는 생각을 하며 이런저런 자료를 찾던 중!   우아한테크세미나 박재성(포비)님의 TDD 리팩토링 강의를 굉장히 인상 깊게 보았고, 강의 중 객체지향 생활체조 원칙(리펙토링 원칙) 부분에 대하여 이후 두고두고 보고 싶어 기록해놓고자 합니다.   강의 링크도 가장 아래에 첨부해 놓겠습니다.   객체지향 생활체조 원칙   규칙 1. 한 메서드에 오직 한 단계의 들여쓰기만 한다.   규칙 2. else 예약어를 쓰지 않는다.   규칙 3. 모든 원시값과 문자열을 포장한다.   규칙 4. 한 줄에 점을 하나만 찍는다.   규칙 5. 줄여쓰지 않는다(축약 금지).   규칙 6. 모든 엔티티를 작게 유지한다.   규칙 7. 3개 이상의 인스턴스 변수를 가진 클래스를 쓰지 않는다.   규칙 8. 일급 콜랙션을 쓴다.   규칙 9. 게터/세터/프로퍼티를 쓰지 않는다.   클린코드   메소드(함수)에서 이상적인 인자개수는 0개(무항)이다.   다음은 1개이고, 다음은 2개이다.   3개는 가능한 피하는 편이 좋다.   4개 이상은 특별한 이유가 있어도 사용하면 안된다.     ","categories": ["Dev"],
         "tags": ["Convention","Java"],
         "url": "/dev/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%83%9D%ED%99%9C%EC%B2%B4%EC%A1%B0/",
+        "teaser": "/assets/images/teaser.png"
+      },{
+        "title": "[Querydsl] '~MySQL server version for the right syntax~'에러해결하기",
+        "excerpt":"Google Cloud Platform (GCP)의 SQL을 이용하여 맞춤분양필터 앱 서비스의 Mysql DB sever를 운영하고 있습니다.   완전 동일한 Querydsl 코드임에도 불구하고 개발서버에서만 (저만 모르는)에러가 발생하였습니다.      java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘double precision)*1.3 between 33.05785 and 66.1157    에러가 뜨면 우선 에러 메세지를 봐야겠죠.   ~MySQL server version~  에러 문구보고 서버의 MySQL 버전은 확인해본 결과 개발서버는 5.x, 프로덕션은 8.x의 서버로 배포되어 있었습니다.   테스트용으로 쓰는 개발 서버가 프로덕션과 환경이 다르다니… 바보같은 실수가 아닐수 없습니다.   왜? 위와 같은 문제가 생기는지 MySQL 메뉴얼을 더 자세히 알아본 결과           Additional target types for casts. The functions CAST() and CONVERT() now support conversions to types DOUBLE, FLOAT, and REAL. Added in MySQL 8.0.17. See Section 12.11, “Cast Functions and Operators”.      와 같은 MySQL 8.0에서의 CHANGLOG를 찾을수 있었습니다.   Querydsl 코드에서 “054.1230A”와 같은 청약주택의 주택형의 평수 값 54.1230 활용하기 위해 아래와 같은 로직을 추가한 부분이 Mysql 5.x에서는 지원이 안되었던 것입니다.   Qhouse .주택형 .castToNum(Double.class) // 추가 로직 수행   매물정보를 불러오는 복잡한 필터쿼리를 Querydsl 기반으로 처리하다보니 ANSI SQL을 벗어난 구문도 작성해볼 기회가 생긴 것 같습니다 :)   필터링이 핵심인 앱의 Backend 개발을 하다보니 강의나 블로그의 예제를 벗어나 Querydsl을 하드하게 사용해보았는데요.   이후에는 Querydsl을 이용한 복잡한 동적쿼리 처리 경험에 대하여 포스팅하겠습니다.   부족한 글 끝까지 읽어주셔서 감사합니다.🙏   참조      MySQL 8.0 Reference Manual  ","categories": ["Spring Data"],
+        "tags": ["Querydsl","MySQL","Troubleshooting"],
+        "url": "/spring%20data/mysql5_cast_to_double_error/",
         "teaser": "/assets/images/teaser.png"
       }]

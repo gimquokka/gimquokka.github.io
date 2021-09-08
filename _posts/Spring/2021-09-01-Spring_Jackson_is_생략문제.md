@@ -3,10 +3,9 @@ title:  "[Spring] Response json에서 boolean의 is가 생략되는 문제"
 excerpt: "Response json에서 boolean의 is가 생략되는 문제를 해결합니다."
 
 categories:
-  - Dev
+  - Spring
 tags:
   - Troubleshooting
-  - Spring
   - Jackson
 
 comments: true
