@@ -3,7 +3,7 @@ title:  "[Git] git add, commit, push를 한 명령어로 끝내기"
 excerpt: "매번 push 하기 위해 해야했던 git add, commit push를 한 명령어로 끝내봅시다!"
 
 categories:
-  - Dev
+  - Git
 tags:
   - TIL
 

@@ -1,9 +1,9 @@
 ---
-title:  "[IntelliJ] Useful IntelliJ keyboard shortcut for Mac"
+title:  "Useful IntelliJ keyboard shortcut for Mac"
 excerpt: "Introduce useful IntelliJ keyboard shortcut for Mac OS"
 
 categories:
-  - Dev
+  - IDE
 tags:
   - TIL
   - IntelliJ
