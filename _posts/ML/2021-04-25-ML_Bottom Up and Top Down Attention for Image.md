@@ -13,17 +13,17 @@ last_modified_at: 2021-09-25T00:00:00-23:59
 
 
 
-1. **Abstraction** 
+# 1. Abstraction
 
-   ![그림1](https://user-images.githubusercontent.com/60743304/134773670-d8b6640d-deee-4dd5-982d-916795b3a652.png)
+![그림1](https://user-images.githubusercontent.com/60743304/134773670-d8b6640d-deee-4dd5-982d-916795b3a652.png)
 
 Image capture and VQA encompass both CV and NLP. The top-down approach *left side of figure* is mainly used for the CV task of it. But as we can see that intuitively there is a limitation of a top-down approach that it just treats the image in a grid-wise way not object-wise. 
 
 So if we use a properly bottom-up approach(*right side of figure*), the model can understand and utilized image information for the tasks. This paper covers how to improve image captioning and VQA performance with the combination of top- down and bottom-up manner. 
 
-2. **Structure** 
+# 2. Structure
 
- a) *Bottom -Up Attention Model* 
+ a) *Bottom -Up Attention Model*
 
 ![그림1](https://user-images.githubusercontent.com/60743304/134773685-4ab02d0c-9f14-4f21-b6d2-0a7b64a7275c.png)
 
@@ -53,7 +53,7 @@ And It is a joint multi-modal embedding structure that uses both images and ques
 
 
 
-3. **Conclusion** 
+# 3. Conclusion
 
 
 
@@ -69,5 +69,5 @@ And It is a joint multi-modal embedding structure that uses both images and ques
 
 
 
-All credit by Anderson et al., “Bottom-Up and Top-Down Attention for Image Captioning and VQA”., CVPR 2018
+<small>All credit by Anderson et al., “Bottom-Up and Top-Down Attention for Image Captioning and VQA”., CVPR 2018</small>
 
