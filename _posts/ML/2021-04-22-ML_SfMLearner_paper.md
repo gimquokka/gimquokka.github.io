@@ -39,13 +39,13 @@ last_modified_at: 2021-10-02T00:00:00-23:59
 
 ## b) Photometric Error
 
-![image-20211002232108064](/Users/jin/Library/Application Support/typora-user-images/image-20211002232108064.png)
+![image](https://user-images.githubusercontent.com/60743304/135722244-0ff69aff-beaf-4d1a-81c7-1bcc33a4d950.png)
 
   As we can check from the left loss term, the per-pixel photometric loss is properly inter combined with the explainability mask. But What a to be desired in it is that this loss is based on the pixel intensity difference, so it is inherently hard to train a low-texture region and the estimated pixel location is marginally incorrect. 
 
 ## c) Explainability Mask
 
-![image-20211002232125346](/Users/jin/Library/Application Support/typora-user-images/image-20211002232125346.png)
+![image](https://user-images.githubusercontent.com/60743304/135722264-709f8dec-6099-46aa-b1b6-e93ceb13822a.png)
 
   The Explainability mask is that pixels are hard to explainable by the model because of motion, occlusion, visibility, and the others. Because this model uses only a single image to estimate the depth map there is a limitation as mentioned in part b). As loss term part b) and left figure, the photometric loss cooperates with the mask. The mask weighting and regularize loss depends on the pixel is explainable or not. By doing so, during the training, the model can minimize the side effect caused by unexplainable pixels.
 
@@ -53,7 +53,7 @@ last_modified_at: 2021-10-02T00:00:00-23:59
 
 # 4. Result
 
-![image-20211002232143373](/Users/jin/Library/Application Support/typora-user-images/image-20211002232143373.png)
+![image](https://user-images.githubusercontent.com/60743304/135722277-cee0d4d9-5c5f-4493-be7b-cddf9226598c.png)
 
   The author argues that performance is quite comparable with the supervised model. But as we can see in the left figure, the result depth map is too blurred and rough. I think as mentioned in 2 - b), c), this network depends on the pixel intensity-based loss term and has two regularization terms. (I'll deal it more detail in limitation) I guess that, even though this model has some, It is hard to use real-world applications. 
 
